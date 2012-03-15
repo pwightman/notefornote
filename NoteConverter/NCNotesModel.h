@@ -22,6 +22,7 @@ typedef enum {
 - (void) notesModel:(NCNotesModel*)source noteReleased:(NCNote*)note relativeOctave:(NSInteger)relativeOctave;
 - (void) notesModel:(NCNotesModel*) source notePressed:(NCNote*)note relativeOctave:(NSInteger)relativeOctave;
 - (NCNote*) getLowestNoteForNotesModel:(NCNotesModel*)source;
+- (void) flushNotes;
 /*
  * This can be implemented if the instrument cares to know what the opposing instruments
  * lowest range is being modified to
@@ -46,6 +47,9 @@ typedef enum {
 - (void) instrument:(NSObject<NCNotesModelDelegate> *)source lowestNoteChanged:(NCNote*)note;
 - (void) addDelegate:(id<NCNotesModelDelegate>)delegate;
 - (void) clearDelegates;
+
+/* Notifies all delegates that whatever notes are currently "pressed", are now released */
+- (void) flushNotes;
 
 /*
  * Returns an array of the notes in ascending order

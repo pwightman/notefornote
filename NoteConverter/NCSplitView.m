@@ -19,17 +19,17 @@
 @implementation NCSplitView
 
 #pragma mark Constructors
-- (id) initWithFrame:(CGRect)frame
+- (id) initWithFrame:(CGRect)frame andControlsView:(UIView*)controlsView
 {
     self = [super initWithFrame:frame];
 	if (self == nil)
 		return nil;
 	_primaryInstrument = nil;
 	_secondaryInstrument = nil;
-	_controlsView = [[NCControlsView alloc] init];
+	_controlsView = controlsView;
 	[self setExclusiveTouch:FALSE];
     [self setMultipleTouchEnabled:TRUE];
-	[self addSubview:_controlsView];
+    [self addSubview:_controlsView];
 	ratio = 9;
     return self;
 }
@@ -136,9 +136,10 @@
 
 - (CGRect) controlsViewRect
 {
-	float dy = _controlsView.image.size.height - self.bounds.size.height*(1.0f/ratio);
+    UIImage* newImage = [UIImage imageNamed:@"optionsBar"];
+	float dy = newImage.size.height - self.bounds.size.height*(1.0f/ratio);
 	int section = (int)ratio/2;
-	return CGRectMake(0, self.bounds.size.height*((float)(section)/ratio) - dy + 20, _controlsView.image.size.width, _controlsView.image.size.height);
+	return CGRectMake(0, self.bounds.size.height*((float)(section)/ratio) - dy + 40, newImage.size.width, newImage.size.height);
 	
 }
 

@@ -8,6 +8,7 @@
 
 #import "NCControlsView.h"
 #import "NCInstrumentSelectViewController.h"
+#import "NCHelpViewController.h"
 
 #pragma mark -
 #pragma mark Private Interface
@@ -37,6 +38,12 @@
     _secondarySwitchLabel = [[UILabel alloc] init];
     _primarySwitchButton = [[UIButton alloc] init];
     _secondarySwitchButton = [[UIButton alloc] init];
+    _helpLabel = [[UILabel alloc] init];
+    _helpButton = [[UIButton alloc] init];
+    
+    _topToolbarController = [[NCToolbarViewController alloc] init];
+    
+    
 	
 	nextState = TRUE;
 
@@ -45,6 +52,7 @@
 	[_swapButton addTarget:self action:@selector(swapButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     [_primarySwitchButton addTarget:self action:@selector(primarySwitchPressed) forControlEvents:UIControlEventTouchUpInside];
     [_secondarySwitchButton addTarget:self action:@selector(secondarySwitchPressed) forControlEvents:UIControlEventTouchUpInside];
+    [_helpButton addTarget:self action:@selector(helpButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     return self;
 }
 
@@ -67,6 +75,13 @@
 @synthesize delegate = _delegate;
 #pragma mark -
 #pragma mark Methods
+
+- (void) helpButtonPressed
+{
+    NCHelpViewController* controller = [[NCHelpViewController alloc] initWithNibName:@"NCHelpViewController" bundle:[NSBundle mainBundle]];
+    
+    [[self delegate] presentModal:controller];
+}
 
 - (void) primarySwitchPressed
 {
@@ -120,10 +135,21 @@
 	[self setupButton:_swapButton atPoint:CGPointMake(900 - buttonWidth, 50)];
 	[self setupLabel:_swapLabel atPoint:CGPointMake(900 - buttonWidth, 50) withText:@"Swap"];
     
-    [self setupButton:_primarySwitchButton atPoint:CGPointMake(30, 50)];
-    [self setupLabel:_primarySwitchLabel atPoint:CGPointMake(30, 50) withText:@"Primary"];
-    [self setupButton:_secondarySwitchButton atPoint:CGPointMake(30 + buttonWidth, 50)];
-    [self setupLabel:_secondarySwitchLabel atPoint:CGPointMake(30 + buttonWidth, 50) withText:@"Secondary"];
+//    [self setupButton:_primarySwitchButton atPoint:CGPointMake(30, 50)];
+//    [self setupLabel:_primarySwitchLabel atPoint:CGPointMake(30, 50) withText:@"Primary"];
+//    [self setupButton:_secondarySwitchButton atPoint:CGPointMake(30 + buttonWidth, 50)];
+//    [self setupLabel:_secondarySwitchLabel atPoint:CGPointMake(30 + buttonWidth, 50) withText:@"Secondary"];
+    
+    [self setupButton:_helpButton atPoint:CGPointMake(30 + 2*buttonWidth, 50 )];
+    [self setupLabel:_helpLabel atPoint:CGPointMake(30 + 2*buttonWidth, 50) withText:@"Help"];
+    
+    CGRect topFrame = [[_topToolbarController view] frame];
+    topFrame.origin.x = 30.0f;
+    topFrame.origin.y = 40.0f;
+    
+    [[_topToolbarController view] setFrame:topFrame];
+    
+    [self addSubview:[_topToolbarController view]];
     
     for (UIButton *button in buttons) {
         [self addSubview:button];

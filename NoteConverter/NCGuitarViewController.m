@@ -27,6 +27,8 @@
 	// Start up the correct sound manager for the guitar
 	[self initSoundManagerWithType:NCSoundGuitarCollin];
     
+    [_soundManager setGain:0.6f];
+    
 	// Get all the right pictures in place
     return self;
 }

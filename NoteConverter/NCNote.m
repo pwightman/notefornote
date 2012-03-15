@@ -229,5 +229,17 @@
 	return color;
 }
 
+- (UIImage*) image
+{
+    return [UIImage imageNamed:[NSString stringWithFormat:@"indicator_%@",[self typeToString]]];
+}
+
+- (NSInteger) octavesFrom:(NCNote *)other
+{
+    NSInteger difference = other.absValue - self.absValue;
+    
+    return difference / (NCNoteMAX + 1);
+}
+
 
 @end

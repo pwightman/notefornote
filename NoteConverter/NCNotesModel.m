@@ -97,26 +97,25 @@
 - (void) addDelegate:(id<NCNotesModelDelegate>)delegate
 {
 	[_delegates addObject:delegate];
+    
+    /* Update the status of all the other delegates by notifying about the lowest note hint */
 	if ([_delegates count] >= 2) {
-		NSObject<NCNotesModelDelegate>* firstDelegate = [_delegates objectAtIndex:0];
-		NSObject<NCNotesModelDelegate>* secondDelegate = [_delegates objectAtIndex:1];
-		NCNote* firstDelegateLowest = nil;
-		NCNote* secondDelegateLowest = nil;		
-		if([firstDelegate respondsToSelector:@selector(getLowestNoteForNotesModel:)])
-			firstDelegateLowest = [firstDelegate getLowestNoteForNotesModel:self];	
-		if([secondDelegate respondsToSelector:@selector(getLowestNoteForNotesModel:)])
-			secondDelegateLowest = [secondDelegate getLowestNoteForNotesModel:self];
-		
-		if (secondDelegateLowest != nil) {
-			if ([firstDelegate respondsToSelector:@selector(notesModel:lowestNoteHint:)])
-				[firstDelegate notesModel:self lowestNoteHint:secondDelegateLowest];
-		}
-		
-		if (firstDelegateLowest != nil) {
-			if ([secondDelegate respondsToSelector:@selector(notesModel:lowestNoteHint:)])
-				[secondDelegate notesModel:self lowestNoteHint:firstDelegateLowest];
-		}
+        
+        for (id<NCNotesModelDelegate> delegate in _delegates)
+        {
+            NCNote* delegateLowest = nil;		
+            if([delegate respondsToSelector:@selector(getLowestNoteForNotesModel:)])
+                delegateLowest = [delegate getLowestNoteForNotesModel:self];	
+            
+            if (delegateLowest != nil) 
+                for (id<NCNotesModelDelegate> otherDelegate in _delegates)
+                {
+                    if ([otherDelegate respondsToSelector:@selector(notesModel:lowestNoteHint:)] && otherDelegate != delegate)
+                        [otherDelegate notesModel:self lowestNoteHint:delegateLowest];
+                }
 
+
+        }
 	}
 }
 
@@ -135,4 +134,5 @@
 	
 	return sortedArray;
 }
+
 @end

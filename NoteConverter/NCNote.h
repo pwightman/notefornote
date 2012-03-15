@@ -47,6 +47,8 @@ typedef enum {
 + (NSArray*) whiteKeyNotes;
 + (NSArray*) blackKeyNotes;
 + (UIColor*) colorForNote:(NCNote*)note;
+- (UIImage*) image;
+- (NSInteger) octavesFrom:(NCNote*)other;
 
 /**
  * Returns an absolute value of the note, can be used to

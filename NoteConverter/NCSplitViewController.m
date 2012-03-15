@@ -84,9 +84,11 @@
 #pragma mark Methods
 - (void) loadView
 {
-	NCSplitView* view = [[[NCSplitView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]] autorelease];
-	NCControlsView* controlsView = (NCControlsView*)[view controlsView];
-	[controlsView setDelegate:self];
+    NCToolbarViewController* toolbarController = [[NCToolbarViewController alloc] init];
+    [toolbarController setDelegate:self];
+	NCSplitView* view = [[[NCSplitView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] andControlsView:[toolbarController view]] autorelease];
+//	NCControlsView* controlsView = (NCControlsView*)[view controlsView];
+//	[controlsView setDelegate:self];
 	[view setUserInteractionEnabled:TRUE];
 	[view setImage:[UIImage imageNamed:@"background"]];
 	//	[view setBackgroundColor:[UIColor whiteColor]];
@@ -98,6 +100,13 @@
     return (NCControlsView*)[[self splitView] controlsView];
 }
 
+# pragma mark - NCControlsViewDelegate methods
+
+- (void) presentModal:(UIViewController *)controller
+{
+    self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:controller animated:YES];
+}
 /*
  * Not very robust, need to find a better way for the controls view to
  * communicate these changes to the model
@@ -119,11 +128,23 @@
 {
     NCInstrumentViewController* newController;
     if (instrumentRole == NCInstrumentRolePrimary) {
+        if (_primaryInstrumentController.type == instrumentType)
+        {
+            return;
+        }
+        /* This does not work yet because loading is taking place on the main thread... */
+        [_primaryInstrumentController setLoadingViewState:YES];
         newController = [[NCInstrumentViewController alloc] initWithModel:self.model andType:instrumentType];
         [newController willBecomeActive];
         [self setPrimaryInstrumentController:newController];
     }
     else {
+        if (_secondaryInstrumentController.type == instrumentType)
+        {
+            return;
+        }
+        /* This does not work yet because loading takes place on the main thread... */
+        [_secondaryInstrumentController setLoadingViewState:YES];
         newController = [[NCInstrumentViewController alloc] initWithModel:self.model andType:instrumentType];
         [newController willBecomeInactive];
         [self setSecondaryInstrumentController:newController];
@@ -153,4 +174,7 @@
 }
 
 
+- (void)viewDidUnload {
+    [super viewDidUnload];
+}
 @end

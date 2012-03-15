@@ -10,8 +10,9 @@
 #import "NCBassViewController.h"
 #import "NCControlsView.h"
 #import "NCSplitView.h"
+#import "NCToolbarViewController.h"
 
-@interface NCSplitViewController : UIViewController <NCControlsViewDelegate>
+@interface NCSplitViewController : UIViewController <NCToolbarViewDelegate>
 {
     NCInstrumentViewController* _primaryInstrumentController;
 	NCInstrumentViewController* _secondaryInstrumentController;

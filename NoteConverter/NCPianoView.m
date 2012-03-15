@@ -67,6 +67,7 @@
 - (void) setKey:(NCNote*)note toPressedState:(BOOL)pressed
 {
 	NCPianoKeyView* view = [_keys valueForKey:[NSString stringWithFormat:@"%i%i", note.type, note.octave]];
+    [view setIndicatorImage:note.image];
 	[view setPressed:pressed];
 }
 

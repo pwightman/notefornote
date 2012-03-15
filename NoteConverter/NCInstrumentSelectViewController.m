@@ -16,7 +16,7 @@
 
 @synthesize instrumentTypes, delegate, role, popover;
 
-- (id)initWithStyle:(UITableViewStyle)style withControlDelegate:(NSObject<NCControlsViewDelegate> *)controlsDelegate andRole:(NCInstrumentRole)instrumentRole;
+- (id)initWithStyle:(UITableViewStyle)style withControlDelegate:(NSObject<NCToolbarViewDelegate> *)controlsDelegate andRole:(NCInstrumentRole)instrumentRole;
 {
     self = [super initWithStyle:style];
     if (self) {

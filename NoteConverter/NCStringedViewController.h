@@ -61,6 +61,8 @@
  */
 - (NSArray*) findAllNotes:(NCNote*)note startingAt:(CGPoint)startingPoint inFretRange:(NSRange)fretRange andStringRange:(NSRange)stringRange;
 
+
+
 /*
  * This function references the model to determine which "mode" it is in and makes the right
  * notes show up accordingly

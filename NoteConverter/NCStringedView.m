@@ -290,22 +290,26 @@
 	
 	// Layout sliders
 	[_lowFretSlider setFrame:CGRectIntegral(CGRectMake(/*_neck.frame.origin.x - _lowFretSlider.image.size.width/2*/ 0 , _neck.frame.origin.x - _lowFretSlider.image.size.height*0.66, _lowFretSlider.image.size.width, _lowFretSlider.image.size.height))];
+    [_lowFretSlider lightUp].frame = _lowFretSlider.frame;
 	[_lowFretSlider setContentMode:UIViewContentModeCenter];
 	[_lowFretSlider setDelegate:self];
 	[_lowFretSlider setUserInteractionEnabled:TRUE];
 	[_lowFretSlider setFretPosition:0];
 	[[_lowFretSlider lightUp] setAlpha:0.0];
-	[_neck addSubview:[_lowFretSlider lightUp]];
+
 	
 	// TODO: Remove the hack from here and above where I'm adding 20/2 and 20 to increase the width
 	// of the sliders
 	[_highFretSlider setFrame:CGRectIntegral(CGRectMake(_fretboardSize + headOffset  - _highFretSlider.image.size.width/2, _neck.frame.origin.x - _highFretSlider.image.size.height*0.66, _highFretSlider.image.size.width, _highFretSlider.image.size.height))];
+    [_highFretSlider lightUp].frame = _highFretSlider.frame;
 	[_highFretSlider setContentMode:UIViewContentModeCenter];
 	[_highFretSlider setDelegate:self];
-	[_highFretSlider setFretPosition:[_frets count]];
+    
+    /* + 1 because we need to account for the open string */
+	[_highFretSlider setFretPosition:[_frets count] + 1];
 	[_highFretSlider setUserInteractionEnabled:TRUE];
 	[[_highFretSlider lightUp] setAlpha:0.0];
-	[_neck addSubview:[_highFretSlider lightUp]];
+
 	
 	/* Shadows */
 	[_leftShadowView setFrame:CGRectMake(0, 0, 0, _neck.bounds.size.height)];
@@ -314,6 +318,8 @@
 	[_neck addSubview:_leftShadowView];
 	[_neck addSubview:_rightShadowView];
 	
+	[self addSubview:[_lowFretSlider lightUp]];
+    [self addSubview:[_highFretSlider lightUp]];
 
 	[self bringSubviewToFront:_lowFretSlider];
 	[self bringSubviewToFront:_highFretSlider];
@@ -356,7 +362,8 @@
 	
 	float location = point.x - _headImage.size.width - fretSize*fretBar;
 	
-	CGPoint newPoint = point;
+	CGPoint newPoint = point; 
+    
 	
     // Hack to account for the 0th fret (open notes)
     if (point.x < headOffset*0.66f) {
@@ -373,7 +380,8 @@
 		newPoint.x = (int)(fretSize*(fretBar + 1));
 		_glowPosition = fretBar + 1;
 	}
-	newPoint.y = 0;
+    newPoint.x += headOffset;
+	newPoint.y = [view lightUp].center.y;
 	
 	[[view lightUp] setCenter: newPoint];
 
@@ -384,7 +392,7 @@
 // TODO: Get collision detection working!
 - (BOOL) fretSliderTouched:(NCStringedFretSliderView *)slider atPoint:(CGPoint)point
 {
-	[[slider lightUp] setAlpha:0.5];
+	[[slider lightUp] setAlpha:0.5f];
 	[self setFretGlowPosition:point forView:slider];
 	[self adjustShadowRects];
 	return TRUE;
@@ -507,7 +515,7 @@
 
 - (NSRange) getFretRange
 {
-    NSLog(@"fret position: %i", _lowFretSlider.fretPosition);
+//    NSLog(@"fret position: %i", _lowFretSlider.fretPosition);
 	return NSRangeFromString([NSString stringWithFormat:@"{%i, %i}", _lowFretSlider.fretPosition, _highFretSlider.fretPosition - _lowFretSlider.fretPosition]);
 }
 - (NSRange) getStringRange

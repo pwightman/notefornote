@@ -231,8 +231,13 @@
 		5FA3AB141511082A00485E3B /* collin_guitar_87.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3AAE31511082A00485E3B /* collin_guitar_87.wav */; };
 		5FA3AB151511082A00485E3B /* collin_guitar_88.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3AAE41511082A00485E3B /* collin_guitar_88.wav */; };
 		5FB001D7134BF8C1009A28CA /* NCSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB001D6134BF8C1009A28CA /* NCSplitViewController.m */; };
-		5FB001DA134BF8F7009A28CA /* NCControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB001D9134BF8F6009A28CA /* NCControlsView.m */; };
 		5FB001DD134C0120009A28CA /* NCSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB001DC134C0120009A28CA /* NCSplitView.m */; };
+		5FBF38971512515400CBF040 /* NCLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF38961512515400CBF040 /* NCLoadingView.m */; };
+		5FBF3899151263B000CBF040 /* annoatedImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FBF3898151263B000CBF040 /* annoatedImage.png */; };
+		5FBF389D1512641F00CBF040 /* NCHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF389B1512641E00CBF040 /* NCHelpViewController.m */; };
+		5FBF389E1512641F00CBF040 /* NCHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBF389C1512641E00CBF040 /* NCHelpViewController.xib */; };
+		5FBF3948151278CD00CBF040 /* NCToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF3946151278CC00CBF040 /* NCToolbarViewController.m */; };
+		5FBF3949151278CD00CBF040 /* NCToolbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBF3947151278CC00CBF040 /* NCToolbarViewController.xib */; };
 		5FC3F471134F8C4800617439 /* NCStringedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3F470134F8C4800617439 /* NCStringedViewController.m */; };
 		5FE37E06136B91F200A9EADD /* NCStringedOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE37E05136B91F200A9EADD /* NCStringedOverlayView.m */; };
 		5FE37E09136B9BE500A9EADD /* NCStringedShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE37E08136B9BE500A9EADD /* NCStringedShadowView.m */; };
@@ -524,10 +529,17 @@
 		5FA3AAE41511082A00485E3B /* collin_guitar_88.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collin_guitar_88.wav; sourceTree = "<group>"; };
 		5FB001D5134BF8C0009A28CA /* NCSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSplitViewController.h; sourceTree = "<group>"; };
 		5FB001D6134BF8C1009A28CA /* NCSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCSplitViewController.m; sourceTree = "<group>"; };
-		5FB001D8134BF8F6009A28CA /* NCControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCControlsView.h; sourceTree = "<group>"; };
-		5FB001D9134BF8F6009A28CA /* NCControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCControlsView.m; sourceTree = "<group>"; };
 		5FB001DB134C0120009A28CA /* NCSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSplitView.h; sourceTree = "<group>"; };
 		5FB001DC134C0120009A28CA /* NCSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCSplitView.m; sourceTree = "<group>"; };
+		5FBF38951512515400CBF040 /* NCLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCLoadingView.h; sourceTree = "<group>"; };
+		5FBF38961512515400CBF040 /* NCLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCLoadingView.m; sourceTree = "<group>"; };
+		5FBF3898151263B000CBF040 /* annoatedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annoatedImage.png; sourceTree = "<group>"; };
+		5FBF389A1512641E00CBF040 /* NCHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCHelpViewController.h; sourceTree = "<group>"; };
+		5FBF389B1512641E00CBF040 /* NCHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCHelpViewController.m; sourceTree = "<group>"; };
+		5FBF389C1512641E00CBF040 /* NCHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCHelpViewController.xib; sourceTree = "<group>"; };
+		5FBF3945151278CC00CBF040 /* NCToolbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCToolbarViewController.h; sourceTree = "<group>"; };
+		5FBF3946151278CC00CBF040 /* NCToolbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCToolbarViewController.m; sourceTree = "<group>"; };
+		5FBF3947151278CC00CBF040 /* NCToolbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCToolbarViewController.xib; sourceTree = "<group>"; };
 		5FC3F46F134F8C4800617439 /* NCStringedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCStringedViewController.h; sourceTree = "<group>"; };
 		5FC3F470134F8C4800617439 /* NCStringedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCStringedViewController.m; sourceTree = "<group>"; };
 		5FE37E04136B91F200A9EADD /* NCStringedOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCStringedOverlayView.h; sourceTree = "<group>"; };
@@ -777,6 +789,7 @@
 		5F5B3BC113463BAF002229EF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5FBF3898151263B000CBF040 /* annoatedImage.png */,
 				5F2E368B14A3C6BC00F8425B /* Indicators */,
 				5F3EE578149BE47E00F19F24 /* ape.wav */,
 				5F9E5812136F41530051FE90 /* optionsButtonPressed.png */,
@@ -817,6 +830,8 @@
 			children = (
 				5F5B3BD913467036002229EF /* NCInstrumentViewController.h */,
 				5F5B3BDA13467036002229EF /* NCInstrumentViewController.m */,
+				5FBF38951512515400CBF040 /* NCLoadingView.h */,
+				5FBF38961512515400CBF040 /* NCLoadingView.m */,
 			);
 			name = "Generic Instrument Classes";
 			sourceTree = "<group>";
@@ -1027,10 +1042,14 @@
 		5FC11B4C135CE52100D02119 /* ControlsView */ = {
 			isa = PBXGroup;
 			children = (
-				5FB001D8134BF8F6009A28CA /* NCControlsView.h */,
-				5FB001D9134BF8F6009A28CA /* NCControlsView.m */,
 				5F82003E1511460C0072A18A /* NCInstrumentSelectViewController.h */,
 				5F82003F1511460C0072A18A /* NCInstrumentSelectViewController.m */,
+				5FBF389A1512641E00CBF040 /* NCHelpViewController.h */,
+				5FBF389B1512641E00CBF040 /* NCHelpViewController.m */,
+				5FBF389C1512641E00CBF040 /* NCHelpViewController.xib */,
+				5FBF3945151278CC00CBF040 /* NCToolbarViewController.h */,
+				5FBF3946151278CC00CBF040 /* NCToolbarViewController.m */,
+				5FBF3947151278CC00CBF040 /* NCToolbarViewController.xib */,
 			);
 			name = ControlsView;
 			sourceTree = "<group>";
@@ -1346,6 +1365,9 @@
 				5FA3AB131511082A00485E3B /* collin_guitar_86.wav in Resources */,
 				5FA3AB141511082A00485E3B /* collin_guitar_87.wav in Resources */,
 				5FA3AB151511082A00485E3B /* collin_guitar_88.wav in Resources */,
+				5FBF3899151263B000CBF040 /* annoatedImage.png in Resources */,
+				5FBF389E1512641F00CBF040 /* NCHelpViewController.xib in Resources */,
+				5FBF3949151278CD00CBF040 /* NCToolbarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1365,7 +1387,6 @@
 				5FFC16DB1348FD6000743C8D /* NCPianoView.m in Sources */,
 				5FFC16DE1348FD6900743C8D /* NCPianoKeyView.m in Sources */,
 				5FB001D7134BF8C1009A28CA /* NCSplitViewController.m in Sources */,
-				5FB001DA134BF8F7009A28CA /* NCControlsView.m in Sources */,
 				5FB001DD134C0120009A28CA /* NCSplitView.m in Sources */,
 				5FC3F471134F8C4800617439 /* NCStringedViewController.m in Sources */,
 				5F159BD3134F950200762489 /* NCStringedView.m in Sources */,
@@ -1413,6 +1434,9 @@
 				5F3EE649149BECB300F19F24 /* OALTools.m in Sources */,
 				5F3EE64B149BECB300F19F24 /* ObjectAL.m in Sources */,
 				5F8200401511460C0072A18A /* NCInstrumentSelectViewController.m in Sources */,
+				5FBF38971512515400CBF040 /* NCLoadingView.m in Sources */,
+				5FBF389D1512641F00CBF040 /* NCHelpViewController.m in Sources */,
+				5FBF3948151278CD00CBF040 /* NCToolbarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

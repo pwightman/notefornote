@@ -20,7 +20,7 @@ typedef enum
 
 /*
  * Vertical and Horizontal refer to the variable of change in the view
- * TODO: This is perhaps not the best way to implement this ask
+ * TODO: This is perhaps not the best way to implement this as
  *       It may be too ambiguous
  */
 typedef enum

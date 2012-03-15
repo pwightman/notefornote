@@ -28,6 +28,8 @@
 	// Start up the correct sound manager for the guitar
 	[self initSoundManagerWithType:NCSoundBassJared];
     
+    [_soundManager setGain:0.9f];
+    
     return self;
 }
 

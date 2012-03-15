@@ -29,5 +29,4 @@
 - (void) clearKeys;
 - (void) setLowestNote:(NCNote*)note withAnimation:(BOOL)animated;
 
-
 @end

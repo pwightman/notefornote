@@ -114,6 +114,11 @@
     return [[[NCNote alloc] initWithType:[note type] octave:fittedOctave] autorelease];
 }
 
+- (void) flushNotes
+{
+    [[self pianoView] clearKeys];
+}
+
 
 #pragma mark - Touch Event Handling
 
@@ -228,11 +233,13 @@
  */
 - (void) willBecomeActive
 {
+    self.active = YES;
 	[[self pianoView] setUserInteractionEnabled:TRUE];
 }
 
 - (void) willBecomeInactive
 {
+    self.active = NO;
 	[[self pianoView] setUserInteractionEnabled:FALSE];
 }
 

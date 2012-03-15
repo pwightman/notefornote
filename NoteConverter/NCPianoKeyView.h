@@ -22,9 +22,12 @@ typedef enum {
 }
 
 - (id) initWithFrame:(CGRect)frame andStyle:(NCPianoKeyStyle)style;
+
 @property (nonatomic) NCNoteType type;
 @property (nonatomic) NCPianoKeyStyle style;
 @property (nonatomic) NSInteger octave;
 @property (nonatomic) BOOL pressed;
+@property (nonatomic, retain) UIImage* indicatorImage;
+@property (nonatomic, retain) UIImageView* indicatorView;
 
 @end

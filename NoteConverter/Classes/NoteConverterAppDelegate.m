@@ -19,16 +19,16 @@
 {   
 	
 	// Runs all the unit tests
-	//[self runTests];
+	[self runTests];
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
 	_model = [[NCNotesModel alloc] init];
-	
+    
 	_splitViewController = [[NCSplitViewController alloc] init];
 	
-    _pianoViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentTypePiano]; //[[NCPianoViewController alloc] initWithModel:_model];
+    _pianoViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentTypePiano];
 	
-	_guitarViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentType5StringBass]; //[[NCBassViewController alloc] initWithModel:_model andStrings:4];
+	_guitarViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentType6StringGuitar];
 
     [_guitarViewController willBecomeInactive];
 	

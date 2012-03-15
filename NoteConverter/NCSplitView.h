@@ -11,9 +11,11 @@
 {
 	UIView* _primaryInstrument;
 	UIView* _secondaryInstrument;
-	UIImageView* _controlsView;
+	UIView* _controlsView;
 	float ratio;
 }
+
+- (id) initWithFrame:(CGRect)frame andControlsView:(UIView*)controlsView;
 
 @property (nonatomic, retain) UIView* primaryInstrument;
 @property (nonatomic, retain) UIView* secondaryInstrument;

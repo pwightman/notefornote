@@ -11,6 +11,7 @@
 #import "NCGuitarViewController.h"
 #import "NCBassViewController.h"
 #import "NCInstrumentSelectViewController.h"
+#import "NCLoadingView.h"
 
 #pragma mark -
 #pragma mark Private Interface
@@ -47,6 +48,8 @@
             break;
     }
     
+    cont.type = instrumentType;
+    
     return cont;
 }
 
@@ -58,6 +61,8 @@
     [model retain];
     
 	_model = model;
+    self.active = NO;
+    self.loadingView = [[[NCLoadingView alloc] init] autorelease];
     
 	
     return self;
@@ -65,6 +70,7 @@
 
 @synthesize soundManager = _soundManager;
 @synthesize type;
+@synthesize active;
 
 - (id) init
 {
@@ -87,6 +93,7 @@
 #pragma mark - Accessors
 @synthesize lowNote = _lowNote;
 @synthesize highNote;
+@synthesize loadingView;
 #pragma mark - Methods
 
 - (void) notesModel:(NCNotesModel *)source notePressed:(NCNote *)note relativeOctave:(NSInteger)relativeOctave
@@ -99,11 +106,23 @@
 	
 }
 
+- (void) setLoadingViewState:(BOOL)state
+{
+    if (state)
+    {
+        loadingView.frame = self.view.frame;
+        [[self view] addSubview:loadingView];
+    }
+    else 
+    {
+        [loadingView removeFromSuperview];
+    }
+}
+
 
 - (void) initSoundManagerWithType:(NCSoundType)soundType
 {
 	_soundManager = [[NCSoundManager alloc] initWithType:soundType andRange:NSRangeFromString([NSString stringWithFormat:@"{%i, %i}", [self lowNote].absValue, [self highNote].absValue])];
-	[_soundManager setSampleGain:0.7f];
 }
 
 @end

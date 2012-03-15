@@ -26,7 +26,7 @@
         return nil;
 	
 	[self setImage:[UIImage imageNamed:@"sliderFrets"]];
-	_lightUp = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fretboardIndicator"]];
+	_lightUp = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sliderFrets"]];
     
     return self;
 }

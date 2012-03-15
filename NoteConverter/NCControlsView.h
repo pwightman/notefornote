@@ -6,6 +6,8 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+@class NCToolbarViewController;
+
 @protocol NCControlsViewDelegate <NSObject>
 
 /* Returns the new toggled state */
@@ -14,6 +16,7 @@
 - (void) setGuitarAsSecondary;
 - (void) setBassAsSecondary;
 - (void) setInstrumentType:(NCInstrumentType)instrumentType forRole:(NCInstrumentRole)instrumentRole;
+- (void) presentModal:(UIViewController*)controller;
 
 @end
 
@@ -30,6 +33,11 @@
 	UILabel* _primarySwitchLabel;
     UIButton* _secondarySwitchButton;
 	UILabel* _secondarySwitchLabel;
+    NCToolbarViewController* _topToolbarController;
+    UIButton* _helpButton;
+	UILabel* _helpLabel;
+    
+
     
     NSMutableArray* labels;
     NSMutableArray* buttons;
@@ -43,6 +51,7 @@
 - (void) nextButtonPressed;
 - (void) primarySwitchPressed;
 - (void) secondarySwitchPressed;
+- (void) helpButtonPressed;
 
 - (void) setupLabel:(UILabel*)label atPoint:(CGPoint)point withText:(NSString*)string;
 - (void) setupButton:(UIButton*)button atPoint:(CGPoint)point;

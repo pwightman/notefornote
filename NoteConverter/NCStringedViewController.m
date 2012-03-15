@@ -280,13 +280,13 @@
 - (void) stringedView:(NCStringedView *)view notePressedFret:(NSUInteger)fret string:(NSUInteger)string
 {
 	NCNote* note = [[_notes objectAtIndex:string] objectAtIndex:fret];
-	[_model instrument:self submitNotePressed:note relativeOctave:0];
+	[_model instrument:self submitNotePressed:note relativeOctave:[self noteToRelativeOctave:note]];
 }
 
 - (void) stringedView:(NCStringedView *)view noteReleasedFret:(NSUInteger)fret string:(NSUInteger)string
 {
 	NCNote* note = [[_notes objectAtIndex:string] objectAtIndex:fret];
-	[_model instrument:self submitNoteReleased:note relativeOctave:0];
+	[_model instrument:self submitNoteReleased:note relativeOctave:[self noteToRelativeOctave:note]];
 }
 
 - (NSString*) stringedView:(NCStringedView *)view getNoteNameAtFret:(NSUInteger)fret string:(NSUInteger)string
@@ -314,6 +314,11 @@
 - (void) notesModel:(NCNotesModel*) source notePressed:(NCNote*)note relativeOctave:(NSInteger)relativeOctave
 {
 	[self executeNoteLogic:source notePressed:note relativeOctave:relativeOctave withPressedState:TRUE];
+}
+
+- (void) flushNotes
+{
+    [_soundManager stopAllSounds];
 }
 
 - (NCNote*) getLowestNoteForNotesModel:(NCNotesModel *)source
@@ -449,5 +454,10 @@
     [self updateLowestNote:YES];
 }
 
+- (NSInteger) noteToRelativeOctave:(NCNote *)note
+{
+    NSLog(@"relative octave: %i", [[self lowNote] octavesFrom:note]);
+    return [[self lowNote] octavesFrom:note];
+}
 
 @end

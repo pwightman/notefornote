@@ -30,4 +30,8 @@
  */
 - (void) copyTest;
 
+- (void) relativeOctaveTests;
+
 @end
+
+void test(bool condition, NSString* test);

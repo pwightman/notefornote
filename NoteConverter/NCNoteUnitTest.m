@@ -42,6 +42,7 @@
 	[self absToTypeAndOctave];
 	[self typeAndOctaveToAbsValue];
 	[self copyTest];
+    [self relativeOctaveTests];
 }
 
 - (void) absToTypeAndOctave
@@ -75,4 +76,29 @@
 	[note release];
 }
 
+- (void) relativeOctaveTests
+{
+    NCNote* note_g1 = [[NCNote alloc] initWithType:NCNoteG octave:1];
+    
+    NCNote* note_a1 = [[NCNote alloc] initWithType:NCNoteA octave:1];
+    NCNote* note_c2 = [[NCNote alloc] initWithType:NCNoteC octave:2];
+    NCNote* note_fsharp2 = [[NCNote alloc] initWithType:NCNoteFsharp octave:2];
+    NCNote* note_g2 = [[NCNote alloc] initWithType:NCNoteG octave:2];
+    
+    test([note_g1 octavesFrom:note_a1] ==  0, @"g1 should be 0 octaves from a1");
+    test([note_g1 octavesFrom:note_c2] == 0, @"g1 should be 0 octaves from c2");
+    test([note_g1 octavesFrom:note_fsharp2] == 0, @"g1 should be 0 octaves from fsharp2");
+    test([note_g1 octavesFrom:note_g2] == 1, @"g1 should be 1 octaves from g2");
+}
+
+
+
 @end
+
+void test(bool condition, NSString* test)
+{
+    if (!condition)
+    {
+        NSLog(@"FAILED %@\n\nExpected:", test);
+    }
+}

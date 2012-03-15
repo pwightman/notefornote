@@ -26,8 +26,11 @@ typedef enum
 - (id) initWithType:(NCSoundType)type andRange:(NSRange)range;
 - (void) playSound:(NSUInteger)midiValue;
 - (void) stopSound:(NSUInteger)midiValue;
-- (void) setSampleGain:(float)gain;
+- (void) stopAllSounds;
+- (void) updateGain;
 - (NSString*) fileString:(NSUInteger)midiValue;
+
+@property (nonatomic) float gain;
 
 
 @end
