@@ -1,0 +1,24 @@
+//
+// Prefix header for all source files of the 'NoteConverter' target in the 'NoteConverter' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
+
+#ifndef __NCGENERIC_ENUMS
+typedef enum {
+    NCInstrumentType6StringBass,
+    NCInstrumentType5StringBass,
+    NCInstrumentType4StringBass,
+    NCInstrumentType6StringGuitar,
+    NCInstrumentTypePiano
+    
+} NCInstrumentType;
+
+typedef enum {
+    NCInstrumentRolePrimary,
+    NCInstrumentRoleSecondary
+} NCInstrumentRole;
+#endif

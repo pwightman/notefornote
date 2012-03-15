@@ -1,0 +1,11 @@
+### iPhone ###
+*.pbxuser
+*.mode1v3
+*.perspectivev3
+*.xcscheme
+*.xcuserstate
+*.xcuserdatad
+*.xcbkptlist
+
+# osx noise
+.DS_Store
