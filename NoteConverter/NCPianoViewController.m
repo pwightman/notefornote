@@ -208,7 +208,7 @@
 	// Register the key touch with the view and the model
 	NCNote* note = [[NCNote alloc] initWithType:[view type] octave:[view octave]];
 	[[self pianoView] setKey:note toPressedState:TRUE];
-	[_model instrument:self submitNotePressed:note relativeOctave:[self relativeOctave:note]];
+	[_model instrument:self submitNotePressed:note];
 	[note release];
 	
 	return;
@@ -218,7 +218,7 @@
 - (void) keyReleased:(NCPianoKeyView*)view
 {
 	NCNote* note = [[NCNote alloc] initWithType:[view type] octave:[view octave]];
-	[_model instrument:self submitNoteReleased:note relativeOctave:[self relativeOctave:note]];
+	[_model instrument:self submitNoteReleased:note];
 	[[self pianoView] setKey:note toPressedState:FALSE];
 	[note release];
 }

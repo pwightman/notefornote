@@ -122,7 +122,7 @@
 			[[self stringedView] setNotePressed:TRUE onString:touchedView.string andFret:touchedView.fret];
 			
 			// NOTE: CHANGE RELATIVE OCTAVE
-			[_model instrument:self submitNotePressed:note relativeOctave:0];
+			[_model instrument:self submitNotePressed:note];
 			[_soundManager playSound:[note absValue]];
 			
 		}
@@ -165,14 +165,14 @@
 		
 		[[self stringedView] setNotePressed:FALSE onString:currentView.string andFret:currentView.fret];
 		NCNote* note = [[_notes objectAtIndex:currentView.string] objectAtIndex:currentView.fret];
-		[_model instrument:self submitNoteReleased:note relativeOctave:0];
+		[_model instrument:self submitNoteReleased:note];
 		[_soundManager stopSound:[note absValue]];
 		
 		// Release the previous note pressed if it's different than the current note
 		if (previousView != currentView) {
 			[[self stringedView] setNotePressed:FALSE onString:previousView.string andFret:previousView.fret];
 			NCNote* note = [[_notes objectAtIndex:previousView.string] objectAtIndex:previousView.fret];
-			[_model instrument:self submitNoteReleased:note relativeOctave:0];
+			[_model instrument:self submitNoteReleased:note];
 			[_soundManager stopSound:[note absValue]];
 		}
 		
@@ -216,7 +216,7 @@
 				NCNote* note = [[_notes objectAtIndex:previousView.string] objectAtIndex:previousView.fret];
 				
 				// TODO: CHANGE RELATIVE OCTAVE LATER
-				[_model instrument:self submitNoteReleased:note relativeOctave:0];
+				[_model instrument:self submitNoteReleased:note];
 				[_soundManager stopSound:[note absValue]];
 			}
 			continue;
@@ -229,13 +229,13 @@
 			NCNote* note = [[_notes objectAtIndex:previousView.string] objectAtIndex:previousView.fret];
 			
 			// TODO: CHANGE RELATIVE OCTAVE LATER
-			[_model instrument:self submitNoteReleased:note relativeOctave:0];
+			[_model instrument:self submitNoteReleased:note];
 			[_soundManager stopSound:[note absValue]];
 			[[self stringedView] setNotePressed:TRUE onString:currentView.string andFret:currentView.fret];
 			note = [[_notes objectAtIndex:currentView.string] objectAtIndex:currentView.fret];
 			
 			// TODO: CHANGE RELATIVE OCTAVE LATER
-			[_model instrument:self submitNotePressed:note relativeOctave:0];
+			[_model instrument:self submitNotePressed:note];
 			[_soundManager playSound:[note absValue]];
 			
 		}
@@ -280,13 +280,13 @@
 - (void) stringedView:(NCStringedView *)view notePressedFret:(NSUInteger)fret string:(NSUInteger)string
 {
 	NCNote* note = [[_notes objectAtIndex:string] objectAtIndex:fret];
-	[_model instrument:self submitNotePressed:note relativeOctave:[self noteToRelativeOctave:note]];
+	[_model instrument:self submitNotePressed:note];
 }
 
 - (void) stringedView:(NCStringedView *)view noteReleasedFret:(NSUInteger)fret string:(NSUInteger)string
 {
 	NCNote* note = [[_notes objectAtIndex:string] objectAtIndex:fret];
-	[_model instrument:self submitNoteReleased:note relativeOctave:[self noteToRelativeOctave:note]];
+	[_model instrument:self submitNoteReleased:note];
 }
 
 - (NSString*) stringedView:(NCStringedView *)view getNoteNameAtFret:(NSUInteger)fret string:(NSUInteger)string

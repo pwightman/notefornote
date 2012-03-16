@@ -46,7 +46,6 @@
 #pragma mark Methods
 - (void) instrument:(NSObject<NCNotesModelDelegate>*)source 
   submitNotePressed:(NCNote *)note 
-	relativeOctave:(NSInteger)relativeOctave
 {
 	//	// NSAssert(note.absValue >= NCNoteABSMIN || note.absValue <= NCNoteABSMAX, @"Bad note: %i", note.absValue);
 	[_notes addObject:note];
@@ -54,14 +53,13 @@
 	{
 		if ([_delegates objectAtIndex:i] != source) 
 		{
-			[[_delegates objectAtIndex:i] notesModel:self notePressed:note relativeOctave:relativeOctave];
+			[[_delegates objectAtIndex:i] notesModel:self notePressed:note relativeOctave:[[source getLowestNoteForNotesModel:self] octavesFrom:note]];
 		}
 	}
 }
 
 - (void) instrument:(NSObject<NCNotesModelDelegate>*)source 
  submitNoteReleased:(NCNote *)note
-	 relativeOctave:(NSInteger)relativeOctave
 {
 	//	// NSAssert(note.absValue >= NCNoteABSMIN && note.absValue <= NCNoteABSMAX, @"Bad note: %i", note.absValue);
 	[_notes removeObject:note];
@@ -69,7 +67,7 @@
 	{
 		if ([_delegates objectAtIndex:i] != source) 
 		{
-			[[_delegates objectAtIndex:i] notesModel:self noteReleased:note relativeOctave:relativeOctave];
+			[[_delegates objectAtIndex:i] notesModel:self noteReleased:note relativeOctave:[[source getLowestNoteForNotesModel:self] octavesFrom:note]];
 		}
 	}
 }

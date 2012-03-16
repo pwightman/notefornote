@@ -42,8 +42,8 @@ typedef enum {
 
 // Relative octave is passed around to give some indication of where on the source instrument
 // the note was pressed without having to identify which kind of instrument it is
-- (void) instrument:(NSObject<NCNotesModelDelegate>*)source submitNotePressed:(NCNote *)note relativeOctave:(NSInteger)relativeOctave;
-- (void) instrument:(NSObject<NCNotesModelDelegate>*)source submitNoteReleased:(NCNote *)note relativeOctave:(NSInteger)relativeOctave;
+- (void) instrument:(NSObject<NCNotesModelDelegate>*)source submitNotePressed:(NCNote *)note;
+- (void) instrument:(NSObject<NCNotesModelDelegate>*)source submitNoteReleased:(NCNote *)note;
 - (void) instrument:(NSObject<NCNotesModelDelegate> *)source lowestNoteChanged:(NCNote*)note;
 - (void) addDelegate:(id<NCNotesModelDelegate>)delegate;
 - (void) clearDelegates;
