@@ -244,7 +244,7 @@
 	for (int string = 0; string < [_stringShadowViews count]; string++) {
 		UIImageView* stringView = [_stringShadowViews objectAtIndex:string];
 		[stringView setImage:[_stringShadowImages objectAtIndex:string]];
-		[stringView setFrame:CGRectIntegral(CGRectMake(0, noteHeight*string + noteHeight/2 + 3, stringView.image.size.width, stringView.image.size.height))];
+		[stringView setFrame:CGRectIntegral(CGRectMake(0 - headOffset, noteHeight*string + noteHeight/2 + 3, stringView.image.size.width, stringView.image.size.height))];
 		[self bringSubviewToFront:stringView];
 	}
 	
@@ -252,7 +252,7 @@
 	for (int string = 0; string < [_stringViews count]; string++) {
 		UIImageView* stringView = [_stringViews objectAtIndex:string];
 		[stringView setImage:[_stringImages objectAtIndex:string]];
-		[stringView setFrame:CGRectIntegral(CGRectMake(0, noteHeight*string + noteHeight/2 - 5, stringView.image.size.width, stringView.image.size.height))];
+		[stringView setFrame:CGRectIntegral(CGRectMake(0 - headOffset, noteHeight*string + noteHeight/2 - 5, stringView.image.size.width, stringView.image.size.height))];
 		[self bringSubviewToFront:stringView];
 	}
 	

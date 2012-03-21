@@ -7,6 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F035F7015198E3F00159DCF /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F6F15198E3D00159DCF /* background.png */; };
+		5F035F7B15198E8D00159DCF /* bass0stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7115198E8D00159DCF /* bass0stringShadow.png */; };
+		5F035F7C15198E8D00159DCF /* 6stringBassInlay12th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7215198E8D00159DCF /* 6stringBassInlay12th.png */; };
+		5F035F7D15198E8D00159DCF /* 6stringBassInlay9th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7315198E8D00159DCF /* 6stringBassInlay9th.png */; };
+		5F035F7E15198E8D00159DCF /* 6stringBassInlay7th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7415198E8D00159DCF /* 6stringBassInlay7th.png */; };
+		5F035F7F15198E8D00159DCF /* 6stringBassInlay5th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7515198E8D00159DCF /* 6stringBassInlay5th.png */; };
+		5F035F8015198E8D00159DCF /* 6stringBassInlay3rd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7615198E8D00159DCF /* 6stringBassInlay3rd.png */; };
+		5F035F8115198E8D00159DCF /* bassOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7715198E8D00159DCF /* bassOpen.png */; };
+		5F035F8215198E8D00159DCF /* 6stringBassFretboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7815198E8D00159DCF /* 6stringBassFretboard.png */; };
+		5F035F8315198E8D00159DCF /* 6stringBassNut.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7915198E8D00159DCF /* 6stringBassNut.png */; };
+		5F035F8415198E8D00159DCF /* 6stringBassFretBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F7A15198E8D00159DCF /* 6stringBassFretBar.png */; };
+		5F035F9015198E9C00159DCF /* bass1stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8515198E9C00159DCF /* bass1stringShadow.png */; };
+		5F035F9115198E9C00159DCF /* bass2stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8615198E9C00159DCF /* bass2stringShadow.png */; };
+		5F035F9215198E9C00159DCF /* bass3stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8715198E9C00159DCF /* bass3stringShadow.png */; };
+		5F035F9315198E9C00159DCF /* bass4stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8815198E9C00159DCF /* bass4stringShadow.png */; };
+		5F035F9415198E9C00159DCF /* bass5stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8915198E9C00159DCF /* bass5stringShadow.png */; };
+		5F035F9515198E9C00159DCF /* bass0string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8A15198E9C00159DCF /* bass0string.png */; };
+		5F035F9615198E9C00159DCF /* bass1string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8B15198E9C00159DCF /* bass1string.png */; };
+		5F035F9715198E9C00159DCF /* bass2string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8C15198E9C00159DCF /* bass2string.png */; };
+		5F035F9815198E9C00159DCF /* bass3string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8D15198E9C00159DCF /* bass3string.png */; };
+		5F035F9915198E9C00159DCF /* bass4string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8E15198E9C00159DCF /* bass4string.png */; };
+		5F035F9A15198E9C00159DCF /* bass5string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F8F15198E9C00159DCF /* bass5string.png */; };
+		5F035F9C15198EC100159DCF /* bassNeckShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F9B15198EC100159DCF /* bassNeckShadow.png */; };
+		5F035FAC15198EFB00159DCF /* guitar0string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F9D15198EFB00159DCF /* guitar0string.png */; };
+		5F035FAD15198EFB00159DCF /* guitar0stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F9E15198EFB00159DCF /* guitar0stringShadow.png */; };
+		5F035FAE15198EFB00159DCF /* guitar1string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035F9F15198EFB00159DCF /* guitar1string.png */; };
+		5F035FAF15198EFB00159DCF /* guitar1stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA015198EFB00159DCF /* guitar1stringShadow.png */; };
+		5F035FB015198EFB00159DCF /* guitar2string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA115198EFB00159DCF /* guitar2string.png */; };
+		5F035FB115198EFB00159DCF /* guitar2stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA215198EFB00159DCF /* guitar2stringShadow.png */; };
+		5F035FB215198EFB00159DCF /* guitar3string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA315198EFB00159DCF /* guitar3string.png */; };
+		5F035FB315198EFB00159DCF /* guitar3stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA415198EFB00159DCF /* guitar3stringShadow.png */; };
+		5F035FB415198EFB00159DCF /* guitar4string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA515198EFB00159DCF /* guitar4string.png */; };
+		5F035FB515198EFB00159DCF /* guitar4stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA615198EFB00159DCF /* guitar4stringShadow.png */; };
+		5F035FB615198EFB00159DCF /* guitar5string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA715198EFB00159DCF /* guitar5string.png */; };
+		5F035FB715198EFB00159DCF /* guitar5stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA815198EFB00159DCF /* guitar5stringShadow.png */; };
+		5F035FB815198EFB00159DCF /* guitarInlays12th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FA915198EFB00159DCF /* guitarInlays12th.png */; };
+		5F035FB915198EFB00159DCF /* guitarOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FAA15198EFB00159DCF /* guitarOpen.png */; };
+		5F035FBA15198EFB00159DCF /* guitarFretboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FAB15198EFB00159DCF /* guitarFretboard.png */; };
+		5F035FBC15198F0200159DCF /* guitarNeckShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FBB15198F0200159DCF /* guitarNeckShadow.png */; };
+		5F035FC015198F0D00159DCF /* guitarFretBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FBD15198F0D00159DCF /* guitarFretBar.png */; };
+		5F035FC115198F0D00159DCF /* guitarInlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FBE15198F0D00159DCF /* guitarInlay.png */; };
+		5F035FC215198F0D00159DCF /* guitarNut.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FBF15198F0D00159DCF /* guitarNut.png */; };
+		5F035FC415198F3900159DCF /* separatorBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FC315198F3800159DCF /* separatorBackground.png */; };
+		5F035FC915198F9000159DCF /* whiteKeyDepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FC515198F9000159DCF /* whiteKeyDepressed.png */; };
+		5F035FCA15198F9000159DCF /* whiteKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FC615198F9000159DCF /* whiteKey.png */; };
+		5F035FCB15198F9000159DCF /* blackKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FC715198F9000159DCF /* blackKey.png */; };
+		5F035FCC15198F9000159DCF /* blackKeyDepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FC815198F9000159DCF /* blackKeyDepressed.png */; };
+		5F035FD0151994CC00159DCF /* guitarInlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FCD151994CC00159DCF /* guitarInlay@2x.png */; };
+		5F035FD1151994CC00159DCF /* guitarFretBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FCE151994CC00159DCF /* guitarFretBar@2x.png */; };
+		5F035FD2151994CC00159DCF /* guitarNut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FCF151994CC00159DCF /* guitarNut@2x.png */; };
+		5F035FD4151994D800159DCF /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FD3151994D800159DCF /* background@2x.png */; };
+		5F035FD6151994DF00159DCF /* bassNeckShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FD5151994DF00159DCF /* bassNeckShadow@2x.png */; };
+		5F035FD8151994E500159DCF /* guitarNeckShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FD7151994E500159DCF /* guitarNeckShadow@2x.png */; };
+		5F035FDC151994EE00159DCF /* 6stringBassFretBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FD9151994EE00159DCF /* 6stringBassFretBar@2x.png */; };
+		5F035FDD151994EE00159DCF /* 6stringBassNut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FDA151994EE00159DCF /* 6stringBassNut@2x.png */; };
+		5F035FDE151994EE00159DCF /* 6stringBassFretboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FDB151994EE00159DCF /* 6stringBassFretboard@2x.png */; };
+		5F035FE0151994F400159DCF /* bassOpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FDF151994F400159DCF /* bassOpen@2x.png */; };
+		5F035FF21519950200159DCF /* 6stringBassInlay3rd@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE11519950200159DCF /* 6stringBassInlay3rd@2x.png */; };
+		5F035FF31519950200159DCF /* 6stringBassInlay5th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE21519950200159DCF /* 6stringBassInlay5th@2x.png */; };
+		5F035FF41519950200159DCF /* 6stringBassInlay7th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE31519950200159DCF /* 6stringBassInlay7th@2x.png */; };
+		5F035FF51519950200159DCF /* 6stringBassInlay9th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE41519950200159DCF /* 6stringBassInlay9th@2x.png */; };
+		5F035FF61519950200159DCF /* 6stringBassInlay12th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE51519950200159DCF /* 6stringBassInlay12th@2x.png */; };
+		5F035FF71519950200159DCF /* bass0stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE61519950200159DCF /* bass0stringShadow@2x.png */; };
+		5F035FF81519950200159DCF /* bass1stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE71519950200159DCF /* bass1stringShadow@2x.png */; };
+		5F035FF91519950200159DCF /* bass2stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE81519950200159DCF /* bass2stringShadow@2x.png */; };
+		5F035FFA1519950200159DCF /* bass3stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FE91519950200159DCF /* bass3stringShadow@2x.png */; };
+		5F035FFB1519950200159DCF /* bass4stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FEA1519950200159DCF /* bass4stringShadow@2x.png */; };
+		5F035FFC1519950200159DCF /* bass5stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FEB1519950200159DCF /* bass5stringShadow@2x.png */; };
+		5F035FFD1519950200159DCF /* bass0string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FEC1519950200159DCF /* bass0string@2x.png */; };
+		5F035FFE1519950200159DCF /* bass1string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FED1519950200159DCF /* bass1string@2x.png */; };
+		5F035FFF1519950200159DCF /* bass2string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FEE1519950200159DCF /* bass2string@2x.png */; };
+		5F0360001519950200159DCF /* bass3string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FEF1519950200159DCF /* bass3string@2x.png */; };
+		5F0360011519950200159DCF /* bass4string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FF01519950200159DCF /* bass4string@2x.png */; };
+		5F0360021519950200159DCF /* bass5string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F035FF11519950200159DCF /* bass5string@2x.png */; };
+		5F0360041519950C00159DCF /* separatorBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360031519950B00159DCF /* separatorBackground@2x.png */; };
+		5F0360141519951A00159DCF /* guitar0string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360051519951A00159DCF /* guitar0string@2x.png */; };
+		5F0360151519951A00159DCF /* guitar0stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360061519951A00159DCF /* guitar0stringShadow@2x.png */; };
+		5F0360161519951A00159DCF /* guitar1string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360071519951A00159DCF /* guitar1string@2x.png */; };
+		5F0360171519951A00159DCF /* guitar1stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360081519951A00159DCF /* guitar1stringShadow@2x.png */; };
+		5F0360181519951A00159DCF /* guitar2string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360091519951A00159DCF /* guitar2string@2x.png */; };
+		5F0360191519951A00159DCF /* guitar2stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F03600A1519951A00159DCF /* guitar2stringShadow@2x.png */; };
+		5F03601A1519951A00159DCF /* guitar3string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F03600B1519951A00159DCF /* guitar3string@2x.png */; };
+		5F03601B1519951A00159DCF /* guitar3stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F03600C1519951A00159DCF /* guitar3stringShadow@2x.png */; };
+		5F03601C1519951A00159DCF /* guitar4string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F03600D1519951A00159DCF /* guitar4string@2x.png */; };
+		5F03601D1519951A00159DCF /* guitar4stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F03600E1519951A00159DCF /* guitar4stringShadow@2x.png */; };
+		5F03601E1519951A00159DCF /* guitar5string@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F03600F1519951A00159DCF /* guitar5string@2x.png */; };
+		5F03601F1519951A00159DCF /* guitar5stringShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360101519951A00159DCF /* guitar5stringShadow@2x.png */; };
+		5F0360201519951A00159DCF /* guitarInlays12th@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360111519951A00159DCF /* guitarInlays12th@2x.png */; };
+		5F0360211519951A00159DCF /* guitarOpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360121519951A00159DCF /* guitarOpen@2x.png */; };
+		5F0360221519951A00159DCF /* guitarFretboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360131519951A00159DCF /* guitarFretboard@2x.png */; };
+		5F0360271519952D00159DCF /* whiteKeyDepressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360231519952D00159DCF /* whiteKeyDepressed@2x.png */; };
+		5F0360281519952D00159DCF /* whiteKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360241519952D00159DCF /* whiteKey@2x.png */; };
+		5F0360291519952D00159DCF /* blackKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360251519952D00159DCF /* blackKey@2x.png */; };
+		5F03602A1519952D00159DCF /* blackKeyDepressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F0360261519952D00159DCF /* blackKeyDepressed@2x.png */; };
 		5F159BD3134F950200762489 /* NCStringedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F159BD2134F950200762489 /* NCStringedView.m */; };
 		5F159BD6134FA71F00762489 /* NCStringedNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F159BD5134FA71F00762489 /* NCStringedNoteView.m */; };
 		5F159BD913512D1D00762489 /* NCStringedFretSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F159BD813512D1B00762489 /* NCStringedFretSliderView.m */; };
@@ -68,48 +162,13 @@
 		5F5B3BD81346407E002229EF /* NCNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B3BD71346407E002229EF /* NCNote.m */; };
 		5F5B3BDB13467036002229EF /* NCInstrumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B3BDA13467036002229EF /* NCInstrumentViewController.m */; };
 		5F5B3BE013467544002229EF /* NCPianoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B3BDF13467544002229EF /* NCPianoViewController.m */; };
-		5F5CE12A1369F30400F288CA /* 6stringBassNut.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1151369F30400F288CA /* 6stringBassNut.png */; };
-		5F5CE12B1369F30400F288CA /* bass1stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1161369F30400F288CA /* bass1stringShadow.png */; };
-		5F5CE12C1369F30400F288CA /* bass4stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1171369F30400F288CA /* bass4stringShadow.png */; };
-		5F5CE12D1369F30400F288CA /* bass2stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1181369F30400F288CA /* bass2stringShadow.png */; };
-		5F5CE12E1369F30400F288CA /* bass0stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1191369F30400F288CA /* bass0stringShadow.png */; };
-		5F5CE12F1369F30400F288CA /* bass5stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE11A1369F30400F288CA /* bass5stringShadow.png */; };
-		5F5CE1301369F30400F288CA /* bass3stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE11B1369F30400F288CA /* bass3stringShadow.png */; };
-		5F5CE1311369F30400F288CA /* bass1string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE11C1369F30400F288CA /* bass1string.png */; };
-		5F5CE1321369F30400F288CA /* bass4string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE11D1369F30400F288CA /* bass4string.png */; };
-		5F5CE1331369F30400F288CA /* bass2string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE11E1369F30400F288CA /* bass2string.png */; };
-		5F5CE1341369F30400F288CA /* bass5string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE11F1369F30400F288CA /* bass5string.png */; };
-		5F5CE1351369F30400F288CA /* bass3string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1201369F30400F288CA /* bass3string.png */; };
-		5F5CE1361369F30400F288CA /* bass0string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1211369F30400F288CA /* bass0string.png */; };
-		5F5CE1371369F30400F288CA /* 6stringBassInlay12th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1221369F30400F288CA /* 6stringBassInlay12th.png */; };
-		5F5CE1381369F30400F288CA /* 6stringBassInlay9th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1231369F30400F288CA /* 6stringBassInlay9th.png */; };
-		5F5CE1391369F30400F288CA /* 6stringBassInlay7th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1241369F30400F288CA /* 6stringBassInlay7th.png */; };
-		5F5CE13A1369F30400F288CA /* 6stringBassInlay5th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1251369F30400F288CA /* 6stringBassInlay5th.png */; };
-		5F5CE13B1369F30400F288CA /* 6stringBassInlay3rd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1261369F30400F288CA /* 6stringBassInlay3rd.png */; };
-		5F5CE13C1369F30400F288CA /* 6stringBassFretboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1271369F30400F288CA /* 6stringBassFretboard.png */; };
-		5F5CE13F1369F31600F288CA /* optionsBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE13E1369F31600F288CA /* optionsBar.png */; };
-		5F5CE1451369F3AB00F288CA /* guitar2string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1401369F3AB00F288CA /* guitar2string.png */; };
-		5F5CE1461369F3AB00F288CA /* guitar5string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1411369F3AB00F288CA /* guitar5string.png */; };
-		5F5CE1471369F3AB00F288CA /* guitar3string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1421369F3AB00F288CA /* guitar3string.png */; };
-		5F5CE1481369F3AB00F288CA /* guitar1string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1431369F3AB00F288CA /* guitar1string.png */; };
-		5F5CE1491369F3AB00F288CA /* guitar4string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE1441369F3AB00F288CA /* guitar4string.png */; };
-		5F5CE14B1369F42800F288CA /* guitarInlay12th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE14A1369F42800F288CA /* guitarInlay12th.png */; };
-		5F5CE14D1369F4EE00F288CA /* guitar0string.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE14C1369F4EE00F288CA /* guitar0string.png */; };
-		5F5CE14F1369FA1F00F288CA /* 6stringBassFretBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE14E1369FA1F00F288CA /* 6stringBassFretBar.png */; };
 		5F5CE156136A038F00F288CA /* fretboardIndicatorGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE154136A038E00F288CA /* fretboardIndicatorGreen.png */; };
 		5F5CE157136A038F00F288CA /* fretboardIndicatorBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE155136A038E00F288CA /* fretboardIndicatorBlue.png */; };
-		5F5CE159136A052400F288CA /* bassOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE158136A052300F288CA /* bassOpen.png */; };
-		5F5CE15E136A05F000F288CA /* blackKeyDepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE15A136A05F000F288CA /* blackKeyDepressed.png */; };
-		5F5CE15F136A05F000F288CA /* blackKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE15B136A05F000F288CA /* blackKey.png */; };
-		5F5CE160136A05F000F288CA /* whiteKeyDepressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE15C136A05F000F288CA /* whiteKeyDepressed.png */; };
-		5F5CE161136A05F000F288CA /* whiteKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5CE15D136A05F000F288CA /* whiteKey.png */; };
 		5F6A2D271358F0E100DBB397 /* NCStringedStringSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6A2D261358F0E100DBB397 /* NCStringedStringSliderView.m */; };
-		5F6B7E401355F12D00C52200 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F6B7E0C1355F12D00C52200 /* background.png */; };
 		5F6B7E491355F5F500C52200 /* sliderStrings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F6B7E451355F5F500C52200 /* sliderStrings.png */; };
 		5F6B7E4A1355F5F500C52200 /* sliderFrets.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F6B7E461355F5F500C52200 /* sliderFrets.png */; };
 		5F6B7E4E1355FCF700C52200 /* fretboardIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F6B7E4D1355FCF700C52200 /* fretboardIndicator.png */; };
 		5F7649F41363B4CA00D5BFC6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7649F31363B4CA00D5BFC6 /* AVFoundation.framework */; };
-		5F786E2E135650E700EF7C7F /* guitarInlayDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F786E28135650E700EF7C7F /* guitarInlayDot.png */; };
 		5F8200401511460C0072A18A /* NCInstrumentSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F82003F1511460C0072A18A /* NCInstrumentSelectViewController.m */; };
 		5F824B3F1367A07300B57287 /* NCGuitarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F824B3E1367A07300B57287 /* NCGuitarViewController.m */; };
 		5F824B431367A20100B57287 /* NCBassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F824B421367A20100B57287 /* NCBassViewController.m */; };
@@ -167,20 +226,8 @@
 		5F9DEB811364B73C00AB4A58 /* Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9DEB791364B73C00AB4A58 /* Decoder.m */; };
 		5F9DEB831364C82800AB4A58 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9DEB821364C82800AB4A58 /* OpenAL.framework */; };
 		5F9DEB851364C88800AB4A58 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9DEB841364C88800AB4A58 /* AudioToolbox.framework */; };
-		5F9E5809136F3B8F0051FE90 /* guitarOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5808136F3B8F0051FE90 /* guitarOpen.png */; };
-		5F9E580F136F3CD60051FE90 /* guitarNeck.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E580B136F3CD60051FE90 /* guitarNeck.png */; };
-		5F9E5810136F3CD60051FE90 /* guitarNeckShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E580C136F3CD60051FE90 /* guitarNeckShadow.png */; };
 		5F9E5814136F41530051FE90 /* optionsButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5812136F41530051FE90 /* optionsButtonPressed.png */; };
 		5F9E5815136F41530051FE90 /* optionsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5813136F41530051FE90 /* optionsButton.png */; };
-		5F9E5817136F44720051FE90 /* guitarInlays12th.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5816136F44720051FE90 /* guitarInlays12th.png */; };
-		5F9E581E136F44C80051FE90 /* guitar4stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5818136F44C70051FE90 /* guitar4stringShadow.png */; };
-		5F9E581F136F44C80051FE90 /* guitar5stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5819136F44C70051FE90 /* guitar5stringShadow.png */; };
-		5F9E5820136F44C80051FE90 /* guitar0stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E581A136F44C70051FE90 /* guitar0stringShadow.png */; };
-		5F9E5821136F44C80051FE90 /* guitar2stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E581B136F44C70051FE90 /* guitar2stringShadow.png */; };
-		5F9E5822136F44C80051FE90 /* guitar3stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E581C136F44C80051FE90 /* guitar3stringShadow.png */; };
-		5F9E5823136F44C80051FE90 /* guitar1stringShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E581D136F44C80051FE90 /* guitar1stringShadow.png */; };
-		5F9E582A136F4D4F0051FE90 /* guitarFretBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5828136F4D4E0051FE90 /* guitarFretBar.png */; };
-		5F9E582B136F4D4F0051FE90 /* guitarNut.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9E5829136F4D4E0051FE90 /* guitarNut.png */; };
 		5FA3AAE51511082A00485E3B /* collin_guitar_40.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3AAB41511082A00485E3B /* collin_guitar_40.wav */; };
 		5FA3AAE61511082A00485E3B /* collin_guitar_41.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3AAB51511082A00485E3B /* collin_guitar_41.wav */; };
 		5FA3AAE71511082A00485E3B /* collin_guitar_42.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5FA3AAB61511082A00485E3B /* collin_guitar_42.wav */; };
@@ -247,6 +294,100 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F035F6F15198E3D00159DCF /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		5F035F7115198E8D00159DCF /* bass0stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass0stringShadow.png; sourceTree = "<group>"; };
+		5F035F7215198E8D00159DCF /* 6stringBassInlay12th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay12th.png; sourceTree = "<group>"; };
+		5F035F7315198E8D00159DCF /* 6stringBassInlay9th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay9th.png; sourceTree = "<group>"; };
+		5F035F7415198E8D00159DCF /* 6stringBassInlay7th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay7th.png; sourceTree = "<group>"; };
+		5F035F7515198E8D00159DCF /* 6stringBassInlay5th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay5th.png; sourceTree = "<group>"; };
+		5F035F7615198E8D00159DCF /* 6stringBassInlay3rd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay3rd.png; sourceTree = "<group>"; };
+		5F035F7715198E8D00159DCF /* bassOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bassOpen.png; sourceTree = "<group>"; };
+		5F035F7815198E8D00159DCF /* 6stringBassFretboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassFretboard.png; sourceTree = "<group>"; };
+		5F035F7915198E8D00159DCF /* 6stringBassNut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassNut.png; sourceTree = "<group>"; };
+		5F035F7A15198E8D00159DCF /* 6stringBassFretBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassFretBar.png; sourceTree = "<group>"; };
+		5F035F8515198E9C00159DCF /* bass1stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass1stringShadow.png; sourceTree = "<group>"; };
+		5F035F8615198E9C00159DCF /* bass2stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass2stringShadow.png; sourceTree = "<group>"; };
+		5F035F8715198E9C00159DCF /* bass3stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass3stringShadow.png; sourceTree = "<group>"; };
+		5F035F8815198E9C00159DCF /* bass4stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass4stringShadow.png; sourceTree = "<group>"; };
+		5F035F8915198E9C00159DCF /* bass5stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass5stringShadow.png; sourceTree = "<group>"; };
+		5F035F8A15198E9C00159DCF /* bass0string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass0string.png; sourceTree = "<group>"; };
+		5F035F8B15198E9C00159DCF /* bass1string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass1string.png; sourceTree = "<group>"; };
+		5F035F8C15198E9C00159DCF /* bass2string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass2string.png; sourceTree = "<group>"; };
+		5F035F8D15198E9C00159DCF /* bass3string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass3string.png; sourceTree = "<group>"; };
+		5F035F8E15198E9C00159DCF /* bass4string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass4string.png; sourceTree = "<group>"; };
+		5F035F8F15198E9C00159DCF /* bass5string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass5string.png; sourceTree = "<group>"; };
+		5F035F9B15198EC100159DCF /* bassNeckShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bassNeckShadow.png; sourceTree = "<group>"; };
+		5F035F9D15198EFB00159DCF /* guitar0string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar0string.png; sourceTree = "<group>"; };
+		5F035F9E15198EFB00159DCF /* guitar0stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar0stringShadow.png; sourceTree = "<group>"; };
+		5F035F9F15198EFB00159DCF /* guitar1string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar1string.png; sourceTree = "<group>"; };
+		5F035FA015198EFB00159DCF /* guitar1stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar1stringShadow.png; sourceTree = "<group>"; };
+		5F035FA115198EFB00159DCF /* guitar2string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar2string.png; sourceTree = "<group>"; };
+		5F035FA215198EFB00159DCF /* guitar2stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar2stringShadow.png; sourceTree = "<group>"; };
+		5F035FA315198EFB00159DCF /* guitar3string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar3string.png; sourceTree = "<group>"; };
+		5F035FA415198EFB00159DCF /* guitar3stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar3stringShadow.png; sourceTree = "<group>"; };
+		5F035FA515198EFB00159DCF /* guitar4string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar4string.png; sourceTree = "<group>"; };
+		5F035FA615198EFB00159DCF /* guitar4stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar4stringShadow.png; sourceTree = "<group>"; };
+		5F035FA715198EFB00159DCF /* guitar5string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar5string.png; sourceTree = "<group>"; };
+		5F035FA815198EFB00159DCF /* guitar5stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar5stringShadow.png; sourceTree = "<group>"; };
+		5F035FA915198EFB00159DCF /* guitarInlays12th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarInlays12th.png; sourceTree = "<group>"; };
+		5F035FAA15198EFB00159DCF /* guitarOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarOpen.png; sourceTree = "<group>"; };
+		5F035FAB15198EFB00159DCF /* guitarFretboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarFretboard.png; sourceTree = "<group>"; };
+		5F035FBB15198F0200159DCF /* guitarNeckShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarNeckShadow.png; sourceTree = "<group>"; };
+		5F035FBD15198F0D00159DCF /* guitarFretBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarFretBar.png; sourceTree = "<group>"; };
+		5F035FBE15198F0D00159DCF /* guitarInlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarInlay.png; sourceTree = "<group>"; };
+		5F035FBF15198F0D00159DCF /* guitarNut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarNut.png; sourceTree = "<group>"; };
+		5F035FC315198F3800159DCF /* separatorBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separatorBackground.png; sourceTree = "<group>"; };
+		5F035FC515198F9000159DCF /* whiteKeyDepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteKeyDepressed.png; sourceTree = "<group>"; };
+		5F035FC615198F9000159DCF /* whiteKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteKey.png; sourceTree = "<group>"; };
+		5F035FC715198F9000159DCF /* blackKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackKey.png; sourceTree = "<group>"; };
+		5F035FC815198F9000159DCF /* blackKeyDepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackKeyDepressed.png; sourceTree = "<group>"; };
+		5F035FCD151994CC00159DCF /* guitarInlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitarInlay@2x.png"; sourceTree = "<group>"; };
+		5F035FCE151994CC00159DCF /* guitarFretBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitarFretBar@2x.png"; sourceTree = "<group>"; };
+		5F035FCF151994CC00159DCF /* guitarNut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitarNut@2x.png"; sourceTree = "<group>"; };
+		5F035FD3151994D800159DCF /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		5F035FD5151994DF00159DCF /* bassNeckShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bassNeckShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FD7151994E500159DCF /* guitarNeckShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitarNeckShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FD9151994EE00159DCF /* 6stringBassFretBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassFretBar@2x.png"; sourceTree = "<group>"; };
+		5F035FDA151994EE00159DCF /* 6stringBassNut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassNut@2x.png"; sourceTree = "<group>"; };
+		5F035FDB151994EE00159DCF /* 6stringBassFretboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassFretboard@2x.png"; sourceTree = "<group>"; };
+		5F035FDF151994F400159DCF /* bassOpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bassOpen@2x.png"; sourceTree = "<group>"; };
+		5F035FE11519950200159DCF /* 6stringBassInlay3rd@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassInlay3rd@2x.png"; sourceTree = "<group>"; };
+		5F035FE21519950200159DCF /* 6stringBassInlay5th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassInlay5th@2x.png"; sourceTree = "<group>"; };
+		5F035FE31519950200159DCF /* 6stringBassInlay7th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassInlay7th@2x.png"; sourceTree = "<group>"; };
+		5F035FE41519950200159DCF /* 6stringBassInlay9th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassInlay9th@2x.png"; sourceTree = "<group>"; };
+		5F035FE51519950200159DCF /* 6stringBassInlay12th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6stringBassInlay12th@2x.png"; sourceTree = "<group>"; };
+		5F035FE61519950200159DCF /* bass0stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass0stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FE71519950200159DCF /* bass1stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass1stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FE81519950200159DCF /* bass2stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass2stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FE91519950200159DCF /* bass3stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass3stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FEA1519950200159DCF /* bass4stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass4stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FEB1519950200159DCF /* bass5stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass5stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F035FEC1519950200159DCF /* bass0string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass0string@2x.png"; sourceTree = "<group>"; };
+		5F035FED1519950200159DCF /* bass1string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass1string@2x.png"; sourceTree = "<group>"; };
+		5F035FEE1519950200159DCF /* bass2string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass2string@2x.png"; sourceTree = "<group>"; };
+		5F035FEF1519950200159DCF /* bass3string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass3string@2x.png"; sourceTree = "<group>"; };
+		5F035FF01519950200159DCF /* bass4string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass4string@2x.png"; sourceTree = "<group>"; };
+		5F035FF11519950200159DCF /* bass5string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bass5string@2x.png"; sourceTree = "<group>"; };
+		5F0360031519950B00159DCF /* separatorBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "separatorBackground@2x.png"; sourceTree = "<group>"; };
+		5F0360051519951A00159DCF /* guitar0string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar0string@2x.png"; sourceTree = "<group>"; };
+		5F0360061519951A00159DCF /* guitar0stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar0stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F0360071519951A00159DCF /* guitar1string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar1string@2x.png"; sourceTree = "<group>"; };
+		5F0360081519951A00159DCF /* guitar1stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar1stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F0360091519951A00159DCF /* guitar2string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar2string@2x.png"; sourceTree = "<group>"; };
+		5F03600A1519951A00159DCF /* guitar2stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar2stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F03600B1519951A00159DCF /* guitar3string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar3string@2x.png"; sourceTree = "<group>"; };
+		5F03600C1519951A00159DCF /* guitar3stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar3stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F03600D1519951A00159DCF /* guitar4string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar4string@2x.png"; sourceTree = "<group>"; };
+		5F03600E1519951A00159DCF /* guitar4stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar4stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F03600F1519951A00159DCF /* guitar5string@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar5string@2x.png"; sourceTree = "<group>"; };
+		5F0360101519951A00159DCF /* guitar5stringShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitar5stringShadow@2x.png"; sourceTree = "<group>"; };
+		5F0360111519951A00159DCF /* guitarInlays12th@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitarInlays12th@2x.png"; sourceTree = "<group>"; };
+		5F0360121519951A00159DCF /* guitarOpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitarOpen@2x.png"; sourceTree = "<group>"; };
+		5F0360131519951A00159DCF /* guitarFretboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guitarFretboard@2x.png"; sourceTree = "<group>"; };
+		5F0360231519952D00159DCF /* whiteKeyDepressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteKeyDepressed@2x.png"; sourceTree = "<group>"; };
+		5F0360241519952D00159DCF /* whiteKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteKey@2x.png"; sourceTree = "<group>"; };
+		5F0360251519952D00159DCF /* blackKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackKey@2x.png"; sourceTree = "<group>"; };
+		5F0360261519952D00159DCF /* blackKeyDepressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackKeyDepressed@2x.png"; sourceTree = "<group>"; };
 		5F159BD1134F950200762489 /* NCStringedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCStringedView.h; sourceTree = "<group>"; };
 		5F159BD2134F950200762489 /* NCStringedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCStringedView.m; sourceTree = "<group>"; };
 		5F159BD4134FA71F00762489 /* NCStringedNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCStringedNoteView.h; sourceTree = "<group>"; };
@@ -354,49 +495,14 @@
 		5F5B3BDA13467036002229EF /* NCInstrumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCInstrumentViewController.m; sourceTree = "<group>"; };
 		5F5B3BDE13467544002229EF /* NCPianoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCPianoViewController.h; sourceTree = "<group>"; };
 		5F5B3BDF13467544002229EF /* NCPianoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCPianoViewController.m; sourceTree = "<group>"; };
-		5F5CE1151369F30400F288CA /* 6stringBassNut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassNut.png; sourceTree = "<group>"; };
-		5F5CE1161369F30400F288CA /* bass1stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass1stringShadow.png; sourceTree = "<group>"; };
-		5F5CE1171369F30400F288CA /* bass4stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass4stringShadow.png; sourceTree = "<group>"; };
-		5F5CE1181369F30400F288CA /* bass2stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass2stringShadow.png; sourceTree = "<group>"; };
-		5F5CE1191369F30400F288CA /* bass0stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass0stringShadow.png; sourceTree = "<group>"; };
-		5F5CE11A1369F30400F288CA /* bass5stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass5stringShadow.png; sourceTree = "<group>"; };
-		5F5CE11B1369F30400F288CA /* bass3stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass3stringShadow.png; sourceTree = "<group>"; };
-		5F5CE11C1369F30400F288CA /* bass1string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass1string.png; sourceTree = "<group>"; };
-		5F5CE11D1369F30400F288CA /* bass4string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass4string.png; sourceTree = "<group>"; };
-		5F5CE11E1369F30400F288CA /* bass2string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass2string.png; sourceTree = "<group>"; };
-		5F5CE11F1369F30400F288CA /* bass5string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass5string.png; sourceTree = "<group>"; };
-		5F5CE1201369F30400F288CA /* bass3string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass3string.png; sourceTree = "<group>"; };
-		5F5CE1211369F30400F288CA /* bass0string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bass0string.png; sourceTree = "<group>"; };
-		5F5CE1221369F30400F288CA /* 6stringBassInlay12th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay12th.png; sourceTree = "<group>"; };
-		5F5CE1231369F30400F288CA /* 6stringBassInlay9th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay9th.png; sourceTree = "<group>"; };
-		5F5CE1241369F30400F288CA /* 6stringBassInlay7th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay7th.png; sourceTree = "<group>"; };
-		5F5CE1251369F30400F288CA /* 6stringBassInlay5th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay5th.png; sourceTree = "<group>"; };
-		5F5CE1261369F30400F288CA /* 6stringBassInlay3rd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassInlay3rd.png; sourceTree = "<group>"; };
-		5F5CE1271369F30400F288CA /* 6stringBassFretboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassFretboard.png; sourceTree = "<group>"; };
-		5F5CE13E1369F31600F288CA /* optionsBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optionsBar.png; sourceTree = "<group>"; };
-		5F5CE1401369F3AB00F288CA /* guitar2string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar2string.png; sourceTree = "<group>"; };
-		5F5CE1411369F3AB00F288CA /* guitar5string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar5string.png; sourceTree = "<group>"; };
-		5F5CE1421369F3AB00F288CA /* guitar3string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar3string.png; sourceTree = "<group>"; };
-		5F5CE1431369F3AB00F288CA /* guitar1string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar1string.png; sourceTree = "<group>"; };
-		5F5CE1441369F3AB00F288CA /* guitar4string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar4string.png; sourceTree = "<group>"; };
-		5F5CE14A1369F42800F288CA /* guitarInlay12th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarInlay12th.png; sourceTree = "<group>"; };
-		5F5CE14C1369F4EE00F288CA /* guitar0string.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar0string.png; sourceTree = "<group>"; };
-		5F5CE14E1369FA1F00F288CA /* 6stringBassFretBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6stringBassFretBar.png; sourceTree = "<group>"; };
 		5F5CE154136A038E00F288CA /* fretboardIndicatorGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fretboardIndicatorGreen.png; sourceTree = "<group>"; };
 		5F5CE155136A038E00F288CA /* fretboardIndicatorBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fretboardIndicatorBlue.png; sourceTree = "<group>"; };
-		5F5CE158136A052300F288CA /* bassOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bassOpen.png; sourceTree = "<group>"; };
-		5F5CE15A136A05F000F288CA /* blackKeyDepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackKeyDepressed.png; sourceTree = "<group>"; };
-		5F5CE15B136A05F000F288CA /* blackKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackKey.png; sourceTree = "<group>"; };
-		5F5CE15C136A05F000F288CA /* whiteKeyDepressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteKeyDepressed.png; sourceTree = "<group>"; };
-		5F5CE15D136A05F000F288CA /* whiteKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteKey.png; sourceTree = "<group>"; };
 		5F6A2D251358F0E100DBB397 /* NCStringedStringSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCStringedStringSliderView.h; sourceTree = "<group>"; };
 		5F6A2D261358F0E100DBB397 /* NCStringedStringSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCStringedStringSliderView.m; sourceTree = "<group>"; };
-		5F6B7E0C1355F12D00C52200 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		5F6B7E451355F5F500C52200 /* sliderStrings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderStrings.png; sourceTree = "<group>"; };
 		5F6B7E461355F5F500C52200 /* sliderFrets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderFrets.png; sourceTree = "<group>"; };
 		5F6B7E4D1355FCF700C52200 /* fretboardIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fretboardIndicator.png; sourceTree = "<group>"; };
 		5F7649F31363B4CA00D5BFC6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		5F786E28135650E700EF7C7F /* guitarInlayDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarInlayDot.png; sourceTree = "<group>"; };
 		5F82003E1511460C0072A18A /* NCInstrumentSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCInstrumentSelectViewController.h; sourceTree = "<group>"; };
 		5F82003F1511460C0072A18A /* NCInstrumentSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCInstrumentSelectViewController.m; sourceTree = "<group>"; };
 		5F824B3D1367A07300B57287 /* NCGuitarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCGuitarViewController.h; sourceTree = "<group>"; };
@@ -464,20 +570,8 @@
 		5F9DEB7A1364B73C00AB4A58 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
 		5F9DEB821364C82800AB4A58 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		5F9DEB841364C88800AB4A58 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		5F9E5808136F3B8F0051FE90 /* guitarOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarOpen.png; sourceTree = "<group>"; };
-		5F9E580B136F3CD60051FE90 /* guitarNeck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarNeck.png; sourceTree = "<group>"; };
-		5F9E580C136F3CD60051FE90 /* guitarNeckShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarNeckShadow.png; sourceTree = "<group>"; };
 		5F9E5812136F41530051FE90 /* optionsButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optionsButtonPressed.png; sourceTree = "<group>"; };
 		5F9E5813136F41530051FE90 /* optionsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optionsButton.png; sourceTree = "<group>"; };
-		5F9E5816136F44720051FE90 /* guitarInlays12th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarInlays12th.png; sourceTree = "<group>"; };
-		5F9E5818136F44C70051FE90 /* guitar4stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar4stringShadow.png; sourceTree = "<group>"; };
-		5F9E5819136F44C70051FE90 /* guitar5stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar5stringShadow.png; sourceTree = "<group>"; };
-		5F9E581A136F44C70051FE90 /* guitar0stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar0stringShadow.png; sourceTree = "<group>"; };
-		5F9E581B136F44C70051FE90 /* guitar2stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar2stringShadow.png; sourceTree = "<group>"; };
-		5F9E581C136F44C80051FE90 /* guitar3stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar3stringShadow.png; sourceTree = "<group>"; };
-		5F9E581D136F44C80051FE90 /* guitar1stringShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitar1stringShadow.png; sourceTree = "<group>"; };
-		5F9E5828136F4D4E0051FE90 /* guitarFretBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarFretBar.png; sourceTree = "<group>"; };
-		5F9E5829136F4D4E0051FE90 /* guitarNut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guitarNut.png; sourceTree = "<group>"; };
 		5FA3AAB41511082A00485E3B /* collin_guitar_40.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collin_guitar_40.wav; sourceTree = "<group>"; };
 		5FA3AAB51511082A00485E3B /* collin_guitar_41.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collin_guitar_41.wav; sourceTree = "<group>"; };
 		5FA3AAB61511082A00485E3B /* collin_guitar_42.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = collin_guitar_42.wav; sourceTree = "<group>"; };
@@ -794,10 +888,16 @@
 				5F3EE578149BE47E00F19F24 /* ape.wav */,
 				5F9E5812136F41530051FE90 /* optionsButtonPressed.png */,
 				5F9E5813136F41530051FE90 /* optionsButton.png */,
+				5F035F6F15198E3D00159DCF /* background.png */,
 				5F5CE154136A038E00F288CA /* fretboardIndicatorGreen.png */,
+				5F6B7E451355F5F500C52200 /* sliderStrings.png */,
+				5F6B7E461355F5F500C52200 /* sliderFrets.png */,
+				5F035FD3151994D800159DCF /* background@2x.png */,
+				5F035FC315198F3800159DCF /* separatorBackground.png */,
+				5F0360031519950B00159DCF /* separatorBackground@2x.png */,
+				5F6B7E4D1355FCF700C52200 /* fretboardIndicator.png */,
 				5F5CE155136A038E00F288CA /* fretboardIndicatorBlue.png */,
 				5FEC4C9D1363B0B5008448A8 /* guitarAudio */,
-				5F5CE13E1369F31600F288CA /* optionsBar.png */,
 				5F5CE1131369F2CC00F288CA /* Bass Images */,
 				5F6B7E421355F14400C52200 /* Guitar Images */,
 				5F6B7E411355F13900C52200 /* Piano Images */,
@@ -852,27 +952,50 @@
 		5F5CE1131369F2CC00F288CA /* Bass Images */ = {
 			isa = PBXGroup;
 			children = (
-				5F5CE158136A052300F288CA /* bassOpen.png */,
-				5F5CE14E1369FA1F00F288CA /* 6stringBassFretBar.png */,
-				5F5CE1151369F30400F288CA /* 6stringBassNut.png */,
-				5F5CE1161369F30400F288CA /* bass1stringShadow.png */,
-				5F5CE1171369F30400F288CA /* bass4stringShadow.png */,
-				5F5CE1181369F30400F288CA /* bass2stringShadow.png */,
-				5F5CE1191369F30400F288CA /* bass0stringShadow.png */,
-				5F5CE11A1369F30400F288CA /* bass5stringShadow.png */,
-				5F5CE11B1369F30400F288CA /* bass3stringShadow.png */,
-				5F5CE11C1369F30400F288CA /* bass1string.png */,
-				5F5CE11D1369F30400F288CA /* bass4string.png */,
-				5F5CE11E1369F30400F288CA /* bass2string.png */,
-				5F5CE11F1369F30400F288CA /* bass5string.png */,
-				5F5CE1201369F30400F288CA /* bass3string.png */,
-				5F5CE1211369F30400F288CA /* bass0string.png */,
-				5F5CE1221369F30400F288CA /* 6stringBassInlay12th.png */,
-				5F5CE1231369F30400F288CA /* 6stringBassInlay9th.png */,
-				5F5CE1241369F30400F288CA /* 6stringBassInlay7th.png */,
-				5F5CE1251369F30400F288CA /* 6stringBassInlay5th.png */,
-				5F5CE1261369F30400F288CA /* 6stringBassInlay3rd.png */,
-				5F5CE1271369F30400F288CA /* 6stringBassFretboard.png */,
+				5F035F8515198E9C00159DCF /* bass1stringShadow.png */,
+				5F035F8615198E9C00159DCF /* bass2stringShadow.png */,
+				5F035F8715198E9C00159DCF /* bass3stringShadow.png */,
+				5F035F8815198E9C00159DCF /* bass4stringShadow.png */,
+				5F035F8915198E9C00159DCF /* bass5stringShadow.png */,
+				5F035F8A15198E9C00159DCF /* bass0string.png */,
+				5F035F8B15198E9C00159DCF /* bass1string.png */,
+				5F035F8C15198E9C00159DCF /* bass2string.png */,
+				5F035F8D15198E9C00159DCF /* bass3string.png */,
+				5F035FE11519950200159DCF /* 6stringBassInlay3rd@2x.png */,
+				5F035FE21519950200159DCF /* 6stringBassInlay5th@2x.png */,
+				5F035FE31519950200159DCF /* 6stringBassInlay7th@2x.png */,
+				5F035FE41519950200159DCF /* 6stringBassInlay9th@2x.png */,
+				5F035FE51519950200159DCF /* 6stringBassInlay12th@2x.png */,
+				5F035FE61519950200159DCF /* bass0stringShadow@2x.png */,
+				5F035FE71519950200159DCF /* bass1stringShadow@2x.png */,
+				5F035FE81519950200159DCF /* bass2stringShadow@2x.png */,
+				5F035FE91519950200159DCF /* bass3stringShadow@2x.png */,
+				5F035FEA1519950200159DCF /* bass4stringShadow@2x.png */,
+				5F035FEB1519950200159DCF /* bass5stringShadow@2x.png */,
+				5F035FEC1519950200159DCF /* bass0string@2x.png */,
+				5F035FED1519950200159DCF /* bass1string@2x.png */,
+				5F035FEE1519950200159DCF /* bass2string@2x.png */,
+				5F035FEF1519950200159DCF /* bass3string@2x.png */,
+				5F035FF01519950200159DCF /* bass4string@2x.png */,
+				5F035FF11519950200159DCF /* bass5string@2x.png */,
+				5F035F8E15198E9C00159DCF /* bass4string.png */,
+				5F035FD9151994EE00159DCF /* 6stringBassFretBar@2x.png */,
+				5F035FDF151994F400159DCF /* bassOpen@2x.png */,
+				5F035FDA151994EE00159DCF /* 6stringBassNut@2x.png */,
+				5F035FDB151994EE00159DCF /* 6stringBassFretboard@2x.png */,
+				5F035F8F15198E9C00159DCF /* bass5string.png */,
+				5F035FD5151994DF00159DCF /* bassNeckShadow@2x.png */,
+				5F035F7115198E8D00159DCF /* bass0stringShadow.png */,
+				5F035F9B15198EC100159DCF /* bassNeckShadow.png */,
+				5F035F7215198E8D00159DCF /* 6stringBassInlay12th.png */,
+				5F035F7315198E8D00159DCF /* 6stringBassInlay9th.png */,
+				5F035F7415198E8D00159DCF /* 6stringBassInlay7th.png */,
+				5F035F7515198E8D00159DCF /* 6stringBassInlay5th.png */,
+				5F035F7615198E8D00159DCF /* 6stringBassInlay3rd.png */,
+				5F035F7715198E8D00159DCF /* bassOpen.png */,
+				5F035F7815198E8D00159DCF /* 6stringBassFretboard.png */,
+				5F035F7915198E8D00159DCF /* 6stringBassNut.png */,
+				5F035F7A15198E8D00159DCF /* 6stringBassFretBar.png */,
 			);
 			name = "Bass Images";
 			sourceTree = "<group>";
@@ -880,11 +1003,14 @@
 		5F6B7E411355F13900C52200 /* Piano Images */ = {
 			isa = PBXGroup;
 			children = (
-				5F5CE15A136A05F000F288CA /* blackKeyDepressed.png */,
-				5F5CE15B136A05F000F288CA /* blackKey.png */,
-				5F5CE15C136A05F000F288CA /* whiteKeyDepressed.png */,
-				5F5CE15D136A05F000F288CA /* whiteKey.png */,
-				5F6B7E0C1355F12D00C52200 /* background.png */,
+				5F035FC515198F9000159DCF /* whiteKeyDepressed.png */,
+				5F035FC615198F9000159DCF /* whiteKey.png */,
+				5F0360231519952D00159DCF /* whiteKeyDepressed@2x.png */,
+				5F0360241519952D00159DCF /* whiteKey@2x.png */,
+				5F0360251519952D00159DCF /* blackKey@2x.png */,
+				5F0360261519952D00159DCF /* blackKeyDepressed@2x.png */,
+				5F035FC715198F9000159DCF /* blackKey.png */,
+				5F035FC815198F9000159DCF /* blackKeyDepressed.png */,
 			);
 			name = "Piano Images";
 			sourceTree = "<group>";
@@ -892,29 +1018,44 @@
 		5F6B7E421355F14400C52200 /* Guitar Images */ = {
 			isa = PBXGroup;
 			children = (
-				5F9E5828136F4D4E0051FE90 /* guitarFretBar.png */,
-				5F9E5829136F4D4E0051FE90 /* guitarNut.png */,
-				5F9E5818136F44C70051FE90 /* guitar4stringShadow.png */,
-				5F9E5819136F44C70051FE90 /* guitar5stringShadow.png */,
-				5F9E581A136F44C70051FE90 /* guitar0stringShadow.png */,
-				5F9E581B136F44C70051FE90 /* guitar2stringShadow.png */,
-				5F9E581C136F44C80051FE90 /* guitar3stringShadow.png */,
-				5F9E581D136F44C80051FE90 /* guitar1stringShadow.png */,
-				5F9E5816136F44720051FE90 /* guitarInlays12th.png */,
-				5F9E580B136F3CD60051FE90 /* guitarNeck.png */,
-				5F9E580C136F3CD60051FE90 /* guitarNeckShadow.png */,
-				5F9E5808136F3B8F0051FE90 /* guitarOpen.png */,
-				5F5CE14C1369F4EE00F288CA /* guitar0string.png */,
-				5F5CE1401369F3AB00F288CA /* guitar2string.png */,
-				5F5CE1411369F3AB00F288CA /* guitar5string.png */,
-				5F5CE1421369F3AB00F288CA /* guitar3string.png */,
-				5F5CE1431369F3AB00F288CA /* guitar1string.png */,
-				5F5CE1441369F3AB00F288CA /* guitar4string.png */,
-				5F5CE14A1369F42800F288CA /* guitarInlay12th.png */,
-				5F786E28135650E700EF7C7F /* guitarInlayDot.png */,
-				5F6B7E4D1355FCF700C52200 /* fretboardIndicator.png */,
-				5F6B7E451355F5F500C52200 /* sliderStrings.png */,
-				5F6B7E461355F5F500C52200 /* sliderFrets.png */,
+				5F035FCD151994CC00159DCF /* guitarInlay@2x.png */,
+				5F035FCE151994CC00159DCF /* guitarFretBar@2x.png */,
+				5F035FD7151994E500159DCF /* guitarNeckShadow@2x.png */,
+				5F035FCF151994CC00159DCF /* guitarNut@2x.png */,
+				5F035FBB15198F0200159DCF /* guitarNeckShadow.png */,
+				5F035FBD15198F0D00159DCF /* guitarFretBar.png */,
+				5F035FBE15198F0D00159DCF /* guitarInlay.png */,
+				5F035FBF15198F0D00159DCF /* guitarNut.png */,
+				5F035F9D15198EFB00159DCF /* guitar0string.png */,
+				5F035F9E15198EFB00159DCF /* guitar0stringShadow.png */,
+				5F035F9F15198EFB00159DCF /* guitar1string.png */,
+				5F035FA015198EFB00159DCF /* guitar1stringShadow.png */,
+				5F035FA115198EFB00159DCF /* guitar2string.png */,
+				5F035FA215198EFB00159DCF /* guitar2stringShadow.png */,
+				5F035FA315198EFB00159DCF /* guitar3string.png */,
+				5F0360051519951A00159DCF /* guitar0string@2x.png */,
+				5F0360061519951A00159DCF /* guitar0stringShadow@2x.png */,
+				5F0360071519951A00159DCF /* guitar1string@2x.png */,
+				5F0360081519951A00159DCF /* guitar1stringShadow@2x.png */,
+				5F0360091519951A00159DCF /* guitar2string@2x.png */,
+				5F03600A1519951A00159DCF /* guitar2stringShadow@2x.png */,
+				5F03600B1519951A00159DCF /* guitar3string@2x.png */,
+				5F03600C1519951A00159DCF /* guitar3stringShadow@2x.png */,
+				5F03600D1519951A00159DCF /* guitar4string@2x.png */,
+				5F03600E1519951A00159DCF /* guitar4stringShadow@2x.png */,
+				5F03600F1519951A00159DCF /* guitar5string@2x.png */,
+				5F0360101519951A00159DCF /* guitar5stringShadow@2x.png */,
+				5F0360111519951A00159DCF /* guitarInlays12th@2x.png */,
+				5F0360121519951A00159DCF /* guitarOpen@2x.png */,
+				5F0360131519951A00159DCF /* guitarFretboard@2x.png */,
+				5F035FA415198EFB00159DCF /* guitar3stringShadow.png */,
+				5F035FA515198EFB00159DCF /* guitar4string.png */,
+				5F035FA615198EFB00159DCF /* guitar4stringShadow.png */,
+				5F035FA715198EFB00159DCF /* guitar5string.png */,
+				5F035FA815198EFB00159DCF /* guitar5stringShadow.png */,
+				5F035FA915198EFB00159DCF /* guitarInlays12th.png */,
+				5F035FAA15198EFB00159DCF /* guitarOpen.png */,
+				5F035FAB15198EFB00159DCF /* guitarFretboard.png */,
 			);
 			name = "Guitar Images";
 			sourceTree = "<group>";
@@ -1198,11 +1339,9 @@
 			files = (
 				5F5B3BBA13463BAF002229EF /* NoteConverterAppDelegate.h in Resources */,
 				5F5B3BC613463BAF002229EF /* InfoPlist.strings in Resources */,
-				5F6B7E401355F12D00C52200 /* background.png in Resources */,
 				5F6B7E491355F5F500C52200 /* sliderStrings.png in Resources */,
 				5F6B7E4A1355F5F500C52200 /* sliderFrets.png in Resources */,
 				5F6B7E4E1355FCF700C52200 /* fretboardIndicator.png in Resources */,
-				5F786E2E135650E700EF7C7F /* guitarInlayDot.png in Resources */,
 				5F8CF8DE1365CA49009A6A56 /* jared_bass_67.wav in Resources */,
 				5F8CF8DF1365CA49009A6A56 /* jared_bass_66.wav in Resources */,
 				5F8CF8E01365CA49009A6A56 /* jared_bass_65.wav in Resources */,
@@ -1248,55 +1387,10 @@
 				5F8CF9081365CA49009A6A56 /* jared_bass_25.wav in Resources */,
 				5F8CF9091365CA49009A6A56 /* jared_bass_24.wav in Resources */,
 				5F8CF90A1365CA49009A6A56 /* jared_bass_23.wav in Resources */,
-				5F5CE12A1369F30400F288CA /* 6stringBassNut.png in Resources */,
-				5F5CE12B1369F30400F288CA /* bass1stringShadow.png in Resources */,
-				5F5CE12C1369F30400F288CA /* bass4stringShadow.png in Resources */,
-				5F5CE12D1369F30400F288CA /* bass2stringShadow.png in Resources */,
-				5F5CE12E1369F30400F288CA /* bass0stringShadow.png in Resources */,
-				5F5CE12F1369F30400F288CA /* bass5stringShadow.png in Resources */,
-				5F5CE1301369F30400F288CA /* bass3stringShadow.png in Resources */,
-				5F5CE1311369F30400F288CA /* bass1string.png in Resources */,
-				5F5CE1321369F30400F288CA /* bass4string.png in Resources */,
-				5F5CE1331369F30400F288CA /* bass2string.png in Resources */,
-				5F5CE1341369F30400F288CA /* bass5string.png in Resources */,
-				5F5CE1351369F30400F288CA /* bass3string.png in Resources */,
-				5F5CE1361369F30400F288CA /* bass0string.png in Resources */,
-				5F5CE1371369F30400F288CA /* 6stringBassInlay12th.png in Resources */,
-				5F5CE1381369F30400F288CA /* 6stringBassInlay9th.png in Resources */,
-				5F5CE1391369F30400F288CA /* 6stringBassInlay7th.png in Resources */,
-				5F5CE13A1369F30400F288CA /* 6stringBassInlay5th.png in Resources */,
-				5F5CE13B1369F30400F288CA /* 6stringBassInlay3rd.png in Resources */,
-				5F5CE13C1369F30400F288CA /* 6stringBassFretboard.png in Resources */,
-				5F5CE13F1369F31600F288CA /* optionsBar.png in Resources */,
-				5F5CE1451369F3AB00F288CA /* guitar2string.png in Resources */,
-				5F5CE1461369F3AB00F288CA /* guitar5string.png in Resources */,
-				5F5CE1471369F3AB00F288CA /* guitar3string.png in Resources */,
-				5F5CE1481369F3AB00F288CA /* guitar1string.png in Resources */,
-				5F5CE1491369F3AB00F288CA /* guitar4string.png in Resources */,
-				5F5CE14B1369F42800F288CA /* guitarInlay12th.png in Resources */,
-				5F5CE14D1369F4EE00F288CA /* guitar0string.png in Resources */,
-				5F5CE14F1369FA1F00F288CA /* 6stringBassFretBar.png in Resources */,
 				5F5CE156136A038F00F288CA /* fretboardIndicatorGreen.png in Resources */,
 				5F5CE157136A038F00F288CA /* fretboardIndicatorBlue.png in Resources */,
-				5F5CE159136A052400F288CA /* bassOpen.png in Resources */,
-				5F5CE15E136A05F000F288CA /* blackKeyDepressed.png in Resources */,
-				5F5CE15F136A05F000F288CA /* blackKey.png in Resources */,
-				5F5CE160136A05F000F288CA /* whiteKeyDepressed.png in Resources */,
-				5F5CE161136A05F000F288CA /* whiteKey.png in Resources */,
-				5F9E5809136F3B8F0051FE90 /* guitarOpen.png in Resources */,
-				5F9E580F136F3CD60051FE90 /* guitarNeck.png in Resources */,
-				5F9E5810136F3CD60051FE90 /* guitarNeckShadow.png in Resources */,
 				5F9E5814136F41530051FE90 /* optionsButtonPressed.png in Resources */,
 				5F9E5815136F41530051FE90 /* optionsButton.png in Resources */,
-				5F9E5817136F44720051FE90 /* guitarInlays12th.png in Resources */,
-				5F9E581E136F44C80051FE90 /* guitar4stringShadow.png in Resources */,
-				5F9E581F136F44C80051FE90 /* guitar5stringShadow.png in Resources */,
-				5F9E5820136F44C80051FE90 /* guitar0stringShadow.png in Resources */,
-				5F9E5821136F44C80051FE90 /* guitar2stringShadow.png in Resources */,
-				5F9E5822136F44C80051FE90 /* guitar3stringShadow.png in Resources */,
-				5F9E5823136F44C80051FE90 /* guitar1stringShadow.png in Resources */,
-				5F9E582A136F4D4F0051FE90 /* guitarFretBar.png in Resources */,
-				5F9E582B136F4D4F0051FE90 /* guitarNut.png in Resources */,
 				5F3EE579149BE47E00F19F24 /* ape.wav in Resources */,
 				5F3EE57B149BE78800F19F24 /* jared_bass_23.caf in Resources */,
 				5F3EE57D149BE7B300F19F24 /* jared_bass_44.caf in Resources */,
@@ -1368,6 +1462,100 @@
 				5FBF389E1512641F00CBF040 /* NCHelpViewController.xib in Resources */,
 				5FBF3949151278CD00CBF040 /* NCToolbarViewController.xib in Resources */,
 				5FBF394B1512B23400CBF040 /* annotatedImage.png in Resources */,
+				5F035F7015198E3F00159DCF /* background.png in Resources */,
+				5F035F7B15198E8D00159DCF /* bass0stringShadow.png in Resources */,
+				5F035F7C15198E8D00159DCF /* 6stringBassInlay12th.png in Resources */,
+				5F035F7D15198E8D00159DCF /* 6stringBassInlay9th.png in Resources */,
+				5F035F7E15198E8D00159DCF /* 6stringBassInlay7th.png in Resources */,
+				5F035F7F15198E8D00159DCF /* 6stringBassInlay5th.png in Resources */,
+				5F035F8015198E8D00159DCF /* 6stringBassInlay3rd.png in Resources */,
+				5F035F8115198E8D00159DCF /* bassOpen.png in Resources */,
+				5F035F8215198E8D00159DCF /* 6stringBassFretboard.png in Resources */,
+				5F035F8315198E8D00159DCF /* 6stringBassNut.png in Resources */,
+				5F035F8415198E8D00159DCF /* 6stringBassFretBar.png in Resources */,
+				5F035F9015198E9C00159DCF /* bass1stringShadow.png in Resources */,
+				5F035F9115198E9C00159DCF /* bass2stringShadow.png in Resources */,
+				5F035F9215198E9C00159DCF /* bass3stringShadow.png in Resources */,
+				5F035F9315198E9C00159DCF /* bass4stringShadow.png in Resources */,
+				5F035F9415198E9C00159DCF /* bass5stringShadow.png in Resources */,
+				5F035F9515198E9C00159DCF /* bass0string.png in Resources */,
+				5F035F9615198E9C00159DCF /* bass1string.png in Resources */,
+				5F035F9715198E9C00159DCF /* bass2string.png in Resources */,
+				5F035F9815198E9C00159DCF /* bass3string.png in Resources */,
+				5F035F9915198E9C00159DCF /* bass4string.png in Resources */,
+				5F035F9A15198E9C00159DCF /* bass5string.png in Resources */,
+				5F035F9C15198EC100159DCF /* bassNeckShadow.png in Resources */,
+				5F035FAC15198EFB00159DCF /* guitar0string.png in Resources */,
+				5F035FAD15198EFB00159DCF /* guitar0stringShadow.png in Resources */,
+				5F035FAE15198EFB00159DCF /* guitar1string.png in Resources */,
+				5F035FAF15198EFB00159DCF /* guitar1stringShadow.png in Resources */,
+				5F035FB015198EFB00159DCF /* guitar2string.png in Resources */,
+				5F035FB115198EFB00159DCF /* guitar2stringShadow.png in Resources */,
+				5F035FB215198EFB00159DCF /* guitar3string.png in Resources */,
+				5F035FB315198EFB00159DCF /* guitar3stringShadow.png in Resources */,
+				5F035FB415198EFB00159DCF /* guitar4string.png in Resources */,
+				5F035FB515198EFB00159DCF /* guitar4stringShadow.png in Resources */,
+				5F035FB615198EFB00159DCF /* guitar5string.png in Resources */,
+				5F035FB715198EFB00159DCF /* guitar5stringShadow.png in Resources */,
+				5F035FB815198EFB00159DCF /* guitarInlays12th.png in Resources */,
+				5F035FB915198EFB00159DCF /* guitarOpen.png in Resources */,
+				5F035FBA15198EFB00159DCF /* guitarFretboard.png in Resources */,
+				5F035FBC15198F0200159DCF /* guitarNeckShadow.png in Resources */,
+				5F035FC015198F0D00159DCF /* guitarFretBar.png in Resources */,
+				5F035FC115198F0D00159DCF /* guitarInlay.png in Resources */,
+				5F035FC215198F0D00159DCF /* guitarNut.png in Resources */,
+				5F035FC415198F3900159DCF /* separatorBackground.png in Resources */,
+				5F035FC915198F9000159DCF /* whiteKeyDepressed.png in Resources */,
+				5F035FCA15198F9000159DCF /* whiteKey.png in Resources */,
+				5F035FCB15198F9000159DCF /* blackKey.png in Resources */,
+				5F035FCC15198F9000159DCF /* blackKeyDepressed.png in Resources */,
+				5F035FD0151994CC00159DCF /* guitarInlay@2x.png in Resources */,
+				5F035FD1151994CC00159DCF /* guitarFretBar@2x.png in Resources */,
+				5F035FD2151994CC00159DCF /* guitarNut@2x.png in Resources */,
+				5F035FD4151994D800159DCF /* background@2x.png in Resources */,
+				5F035FD6151994DF00159DCF /* bassNeckShadow@2x.png in Resources */,
+				5F035FD8151994E500159DCF /* guitarNeckShadow@2x.png in Resources */,
+				5F035FDC151994EE00159DCF /* 6stringBassFretBar@2x.png in Resources */,
+				5F035FDD151994EE00159DCF /* 6stringBassNut@2x.png in Resources */,
+				5F035FDE151994EE00159DCF /* 6stringBassFretboard@2x.png in Resources */,
+				5F035FE0151994F400159DCF /* bassOpen@2x.png in Resources */,
+				5F035FF21519950200159DCF /* 6stringBassInlay3rd@2x.png in Resources */,
+				5F035FF31519950200159DCF /* 6stringBassInlay5th@2x.png in Resources */,
+				5F035FF41519950200159DCF /* 6stringBassInlay7th@2x.png in Resources */,
+				5F035FF51519950200159DCF /* 6stringBassInlay9th@2x.png in Resources */,
+				5F035FF61519950200159DCF /* 6stringBassInlay12th@2x.png in Resources */,
+				5F035FF71519950200159DCF /* bass0stringShadow@2x.png in Resources */,
+				5F035FF81519950200159DCF /* bass1stringShadow@2x.png in Resources */,
+				5F035FF91519950200159DCF /* bass2stringShadow@2x.png in Resources */,
+				5F035FFA1519950200159DCF /* bass3stringShadow@2x.png in Resources */,
+				5F035FFB1519950200159DCF /* bass4stringShadow@2x.png in Resources */,
+				5F035FFC1519950200159DCF /* bass5stringShadow@2x.png in Resources */,
+				5F035FFD1519950200159DCF /* bass0string@2x.png in Resources */,
+				5F035FFE1519950200159DCF /* bass1string@2x.png in Resources */,
+				5F035FFF1519950200159DCF /* bass2string@2x.png in Resources */,
+				5F0360001519950200159DCF /* bass3string@2x.png in Resources */,
+				5F0360011519950200159DCF /* bass4string@2x.png in Resources */,
+				5F0360021519950200159DCF /* bass5string@2x.png in Resources */,
+				5F0360041519950C00159DCF /* separatorBackground@2x.png in Resources */,
+				5F0360141519951A00159DCF /* guitar0string@2x.png in Resources */,
+				5F0360151519951A00159DCF /* guitar0stringShadow@2x.png in Resources */,
+				5F0360161519951A00159DCF /* guitar1string@2x.png in Resources */,
+				5F0360171519951A00159DCF /* guitar1stringShadow@2x.png in Resources */,
+				5F0360181519951A00159DCF /* guitar2string@2x.png in Resources */,
+				5F0360191519951A00159DCF /* guitar2stringShadow@2x.png in Resources */,
+				5F03601A1519951A00159DCF /* guitar3string@2x.png in Resources */,
+				5F03601B1519951A00159DCF /* guitar3stringShadow@2x.png in Resources */,
+				5F03601C1519951A00159DCF /* guitar4string@2x.png in Resources */,
+				5F03601D1519951A00159DCF /* guitar4stringShadow@2x.png in Resources */,
+				5F03601E1519951A00159DCF /* guitar5string@2x.png in Resources */,
+				5F03601F1519951A00159DCF /* guitar5stringShadow@2x.png in Resources */,
+				5F0360201519951A00159DCF /* guitarInlays12th@2x.png in Resources */,
+				5F0360211519951A00159DCF /* guitarOpen@2x.png in Resources */,
+				5F0360221519951A00159DCF /* guitarFretboard@2x.png in Resources */,
+				5F0360271519952D00159DCF /* whiteKeyDepressed@2x.png in Resources */,
+				5F0360281519952D00159DCF /* whiteKey@2x.png in Resources */,
+				5F0360291519952D00159DCF /* blackKey@2x.png in Resources */,
+				5F03602A1519952D00159DCF /* blackKeyDepressed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1467,7 +1655,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;

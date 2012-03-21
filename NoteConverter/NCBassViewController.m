@@ -78,7 +78,7 @@
 	[view setNeckImage:[UIImage imageNamed:@"6stringBassFretboard"]];
 	[view setFretImage:[UIImage imageNamed:@"6stringBassFretBar"]];
 	[view setNutImage:[UIImage imageNamed:@"6stringBassNut"]];
-	[view setNeckShadowImage:[UIImage imageNamed:@"guitarNeckShadow"]];
+	[view setNeckShadowImage:[UIImage imageNamed:@"bassNeckShadow"]];
 	[view setHeadImage:[UIImage imageNamed:@"bassOpen"]];
 	
 	NSMutableArray* inlayArray = [NSMutableArray arrayWithCapacity:4];

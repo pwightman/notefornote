@@ -74,7 +74,7 @@
 - (void) initImages
 {	
 	NCStringedView* view = [self stringedView];
-	[view setNeckImage:[UIImage imageNamed:@"guitarNeck"]];
+	[view setNeckImage:[UIImage imageNamed:@"guitarFretboard"]];
 	[view setFretImage:[UIImage imageNamed:@"guitarFretBar"]];
 	[view setNutImage:[UIImage imageNamed:@"guitarNut"]];
 	[view setNeckShadowImage:[UIImage imageNamed:@"guitarNeckShadow"]];
@@ -82,11 +82,11 @@
 	
 	NSMutableArray* inlayArray = [NSMutableArray arrayWithCapacity:4];
 
-	[inlayArray addObject:[UIImage imageNamed:@"guitarInlayDot"]];
-	[inlayArray addObject:[UIImage imageNamed:@"guitarInlayDot"]];
-	[inlayArray addObject:[UIImage imageNamed:@"guitarInlayDot"]];
+	[inlayArray addObject:[UIImage imageNamed:@"guitarInlay"]];
+	[inlayArray addObject:[UIImage imageNamed:@"guitarInlay"]];
+	[inlayArray addObject:[UIImage imageNamed:@"guitarInlay"]];
 	//	[inlayArray addObject:[UIImage imageNamed:@"guitarInlayDot"]];
-	[inlayArray addObject:[UIImage imageNamed:@"guitarInlay12th"]];
+	[inlayArray addObject:[UIImage imageNamed:@"guitarInlays12th"]];
 	
 	[view setInlayImages:inlayArray];
 	

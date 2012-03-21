@@ -136,10 +136,10 @@
 
 - (CGRect) controlsViewRect
 {
-    UIImage* newImage = [UIImage imageNamed:@"optionsBar"];
+    UIImage* newImage = [UIImage imageNamed:@"separatorBackground"];
 	float dy = newImage.size.height - self.bounds.size.height*(1.0f/ratio);
 	int section = (int)ratio/2;
-	return CGRectMake(0, self.bounds.size.height*((float)(section)/ratio) - dy + 40, newImage.size.width, newImage.size.height);
+	return CGRectMake(0, self.bounds.size.height*((float)(section)/ratio) - dy + 13, newImage.size.width, newImage.size.height);
 	
 }
 
