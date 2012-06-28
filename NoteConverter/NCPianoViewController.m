@@ -102,16 +102,17 @@
 
 - (NCNote*) fittedNote:(NCNote*)note relativeOctave:(NSInteger)relativeOctave
 {
-    // Not being used...
-//    NSInteger lowOctave = [[self lowNote] octave];
-    NSInteger highOctave = [[self highNote] octave];
-    
     /* Make sure the octave fits within the range */
-    NSInteger fittedOctave = [note octave];
-    if (fittedOctave > highOctave) {
-        fittedOctave = highOctave;
+    NCNote* _note = [[[NCNote alloc] initWithType:[note type] octave:[note octave]] autorelease];    
+
+    /* This works because the piano ALWAYS has more than one octave, if not, you risk */
+    while ([_note absValue] > [[self highNote] absValue] && [_note absValue] > [[self lowNote] absValue]) {
+        _note = [[[NCNote alloc] initWithType:[note type] octave:[_note octave] - 1] autorelease];
     }
-    return [[[NCNote alloc] initWithType:[note type] octave:fittedOctave] autorelease];
+    
+//    NSLog(@"\nLow note: \t%i\nFitted Note:\t%i\nHigh Note:\t%i\n", [[self lowNote] absValue], [_note absValue], [[self highNote] absValue]);
+    
+    return _note;
 }
 
 - (void) flushNotes

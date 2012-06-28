@@ -15,8 +15,13 @@
 @end
 
 @implementation NCToolbarViewController
-@synthesize bottomButtons;
-@synthesize topButtons, delegate;
+@synthesize bottomGuitar;
+@synthesize bottomBass;
+@synthesize bottomPiano;
+@synthesize topGuitar;
+@synthesize topBass;
+@synthesize topPiano;
+@synthesize bottomButtons, topButtons, delegate, topSelectedButton, bottomSelectedButton;
 
 - (id)init
 {
@@ -37,9 +42,21 @@
 {
     [self setBottomButtons:nil];
     [self setTopButtons:nil];
+    [self setBottomSelectedButton:nil];
+    [self setTopSelectedButton:nil];
+    [self setTopGuitar:nil];
+    [self setTopBass:nil];
+    [self setTopPiano:nil];
+    [self setBottomGuitar:nil];
+    [self setBottomBass:nil];
+    [self setBottomPiano:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self setPressedStates];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -117,9 +134,84 @@
     return role;
 }
 
+- (NSSet*) guitarInstruments
+{
+    return [NSSet setWithObject:[NSNumber numberWithInt:NCInstrumentType6StringGuitar]];
+}
+
+- (NSSet*) bassInstruments
+{
+    return [NSSet setWithObjects:
+            [NSNumber numberWithInt:NCInstrumentType4StringBass],
+            [NSNumber numberWithInt:NCInstrumentType5StringBass],
+            [NSNumber numberWithInt:NCInstrumentType6StringBass],
+            nil];
+                                
+}
+
+- (NSSet*) pianoInstruments
+{
+    return [NSSet setWithObject:[NSNumber numberWithInt:NCInstrumentTypePiano]];
+}
+
+- (void) setPressedStates
+{
+    [bottomSelectedButton setSelected:FALSE];
+    UIButton* selected = nil;
+    if ([[self guitarInstruments] containsObject:[NSNumber numberWithInt:[delegate primaryInstrumentType]]]) {
+        selected = self.bottomGuitar;
+    }
+    else if ([[self bassInstruments] containsObject:[NSNumber numberWithInt:[delegate primaryInstrumentType]]]) {
+        selected = self.bottomBass;
+    }
+    else if ([[self pianoInstruments] containsObject:[NSNumber numberWithInt:[delegate primaryInstrumentType]]]) {
+        selected = self.bottomPiano;
+    }
+    
+    [selected setSelected:TRUE];
+    [self setBottomSelectedButton:selected];
+    
+    [topSelectedButton setSelected:FALSE];
+    selected = nil;
+    if ([[self guitarInstruments] containsObject:[NSNumber numberWithInt:[delegate secondaryInstrumentType]]]) {
+        selected = self.topGuitar;
+    }
+    else if ([[self bassInstruments] containsObject:[NSNumber numberWithInt:[delegate secondaryInstrumentType]]]) {
+        selected = self.topBass;
+    }
+    else if ([[self pianoInstruments] containsObject:[NSNumber numberWithInt:[delegate secondaryInstrumentType]]]) {
+        selected = self.topPiano;
+    }
+    
+    [selected setSelected:TRUE];
+    [self setTopSelectedButton:selected];
+    
+    if ([delegate primaryInstrumentType] == NCInstrumentTypePiano) {
+        [topPiano setEnabled:FALSE];
+    }
+    else {
+        [topPiano setEnabled:TRUE];
+    }
+
+    if ([delegate secondaryInstrumentType] == NCInstrumentTypePiano) {
+        [bottomPiano setEnabled:FALSE];
+    }
+    else {
+        [bottomPiano setEnabled:TRUE];        
+    }
+}
+
 - (void)dealloc {
     [bottomButtons release];
     [topButtons release];
+    [topSelectedButton release];
+    [bottomSelectedButton release];
+    [topGuitar release];
+    [topBass release];
+    [topPiano release];
+    [bottomGuitar release];
+    [bottomBass release];
+    [bottomPiano release];
     [super dealloc];
 }
 @end

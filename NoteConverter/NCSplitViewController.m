@@ -43,6 +43,7 @@
 @synthesize primaryInstrumentController = _primaryInstrumentController;
 @synthesize secondaryInstrumentController = _secondaryInstrumentController;
 @synthesize model;
+@synthesize toolbarController;
 
 - (void) setPrimaryInstrumentController:(NCInstrumentViewController *)primaryInstrumentController
 {
@@ -84,9 +85,9 @@
 #pragma mark Methods
 - (void) loadView
 {
-    NCToolbarViewController* toolbarController = [[NCToolbarViewController alloc] init];
-    [toolbarController setDelegate:self];
-	NCSplitView* view = [[[NCSplitView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] andControlsView:[toolbarController view]] autorelease];
+    self.toolbarController = [[NCToolbarViewController alloc] init];
+    [self.toolbarController setDelegate:self];
+	NCSplitView* view = [[[NCSplitView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] andControlsView:[self.toolbarController view]] autorelease];
 //	NCControlsView* controlsView = (NCControlsView*)[view controlsView];
 //	[controlsView setDelegate:self];
 	[view setUserInteractionEnabled:TRUE];
@@ -153,6 +154,7 @@
     [[self model] clearDelegates];
 	[[self model] addDelegate:_primaryInstrumentController];
 	[[self model] addDelegate:_secondaryInstrumentController];
+    [[self toolbarController] setPressedStates];
 }
 
 - (void) swapViews
@@ -168,9 +170,19 @@
 	// Swapping the controllers does not necessarily mean the views were switched
 	// in the splitView!
 	[[self splitView] swapViews];
-	
+	[[self toolbarController] setPressedStates];
 	
 	[[self splitView] setNeedsLayout];
+}
+
+- (NCInstrumentType) primaryInstrumentType
+{
+    return [self primaryInstrumentController].type;
+}
+
+- (NCInstrumentType) secondaryInstrumentType
+{
+    return [self secondaryInstrumentController].type;
 }
 
 

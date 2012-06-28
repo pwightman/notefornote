@@ -21,13 +21,14 @@
 @interface NoteConverterAppDelegate : NSObject <UIApplicationDelegate> 
 {
     UIWindow* _window;
-	NCInstrumentViewController* _pianoViewController;
-	NCInstrumentViewController* _guitarViewController;
+	NCInstrumentViewController* _primaryViewController;
+	NCInstrumentViewController* _secondaryViewController;
 	NCSplitViewController* _splitViewController;
 	NCNotesModel* _model;
 	Finch* _finch;
 }
 
 - (void) runTests;
+- (void) animateIn;
 
 @end

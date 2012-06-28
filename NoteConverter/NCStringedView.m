@@ -367,7 +367,7 @@
 	
     // Hack to account for the 0th fret (open notes)
     if (point.x < headOffset*0.66f) {
-        newPoint.x = 0 - headOffset;
+        newPoint.x = 0 - headOffset + view.frame.size.width/2;
         _glowPosition = 0;
     }
 	else if (location < fretSize/2) {
@@ -462,7 +462,7 @@
 	NSInteger fretPos;
     // This is hack to make it possible to change the fret position to the 0th position
     if (point.x < headOffset*0.66f) {
-        newPoint.x = 0;
+        newPoint.x = 0 + slider.image.size.width/2;
         fretPos = 0;
     }
     else if (location < fretSize/2) {

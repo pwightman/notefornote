@@ -19,57 +19,61 @@
 {   
 	
 	// Runs all the unit tests
-	[self runTests];
+	// [self runTests];
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
 	_model = [[NCNotesModel alloc] init];
     
 	_splitViewController = [[NCSplitViewController alloc] init];
 	
-    _pianoViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentTypePiano];
+    _primaryViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentTypePiano];
 	
-	_guitarViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentType6StringGuitar];
+	_secondaryViewController = [[NCInstrumentViewController alloc] initWithModel:_model andType:NCInstrumentType6StringGuitar];
 
-    [_guitarViewController willBecomeInactive];
+    [_secondaryViewController willBecomeInactive];
 	
-	[_model addDelegate:_pianoViewController];
-	[_model addDelegate:_guitarViewController];
+	[_model addDelegate:_primaryViewController];
+	[_model addDelegate:_secondaryViewController];
 	
 	// Add for iPad functionality
-	[_splitViewController setPrimaryInstrumentController:_pianoViewController];
-	[_splitViewController setSecondaryInstrumentController:_guitarViewController];
+	[_splitViewController setPrimaryInstrumentController:_primaryViewController];
+	[_splitViewController setSecondaryInstrumentController:_secondaryViewController];
 	[_splitViewController setModel:_model];
 	[_window addSubview:[_splitViewController view]];
 	
-	[_pianoViewController release];
-	[_guitarViewController release];
+	[_primaryViewController release];
+	[_secondaryViewController release];
 
     [_window makeKeyAndVisible];
-    
+    [self animateIn];
+}
+
+- (void) animateIn
+{
     // Animate in...
     float animationDistance = 1024.0f;
-    CGRect rect = [[_guitarViewController view] frame];
+    CGRect rect = [[_secondaryViewController view] frame];
     rect.origin.x += animationDistance;
-    [[_guitarViewController view] setFrame:rect];
+    [[_secondaryViewController view] setFrame:rect];
     
-    CGRect rect2 = [[_pianoViewController view] frame];
+    CGRect rect2 = [[_primaryViewController view] frame];
     rect2.origin.x -= animationDistance;
-    [[_pianoViewController view] setFrame:rect2];
+    [[_primaryViewController view] setFrame:rect2];
     
     [[_splitViewController controlsView] setAlpha:0.0f];
 
-    [_window makeKeyAndVisible];
     [UIView animateWithDuration:0.5f animations:^(void) {
-        CGRect rect = [[_guitarViewController view] frame];
+        CGRect rect = [[_secondaryViewController view] frame];
         rect.origin.x -= animationDistance;
-        [[_guitarViewController view] setFrame:rect];
+        [[_secondaryViewController view] setFrame:rect];
         
-        CGRect rect2 = [[_pianoViewController view] frame];
+        CGRect rect2 = [[_primaryViewController view] frame];
         rect2.origin.x += animationDistance;
-        [[_pianoViewController view] setFrame:rect2];
+        [[_primaryViewController view] setFrame:rect2];
         
         [[_splitViewController controlsView] setAlpha:1.0f];
     }];
+
 }
 
 - (void) runTests
@@ -82,8 +86,8 @@
 
 - (void) applicationWillTerminate:(UIApplication*)application
 {
-	[_pianoViewController release];
-	[_guitarViewController release];
+	[_primaryViewController release];
+	[_secondaryViewController release];
 	[_splitViewController release];
 	[_model release];
 	[_model release];
