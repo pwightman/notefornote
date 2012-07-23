@@ -47,9 +47,6 @@
 
 - (void) setPrimaryInstrumentController:(NCInstrumentViewController *)primaryInstrumentController
 {
-	if (_primaryInstrumentController != nil) {
-		[_primaryInstrumentController autorelease];
-	}
 	
 	// Notify the controller it should be playable
 	[_primaryInstrumentController willBecomeActive];
@@ -61,9 +58,6 @@
 
 - (void) setSecondaryInstrumentController:(NCInstrumentViewController *)secondaryInstrumentController
 {
-	if (_secondaryInstrumentController != nil) {
-		[_secondaryInstrumentController autorelease];
-	}
 	// Notify the controller it shouldn't be playable
 	[_secondaryInstrumentController willBecomeInactive];
 	[secondaryInstrumentController retain];
@@ -85,7 +79,7 @@
 #pragma mark Methods
 - (void) loadView
 {
-    self.toolbarController = [[NCToolbarViewController alloc] init];
+    toolbarController = [[NCToolbarViewController alloc] init];
     [self.toolbarController setDelegate:self];
 	NCSplitView* view = [[[NCSplitView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] andControlsView:[self.toolbarController view]] autorelease];
 //	NCControlsView* controlsView = (NCControlsView*)[view controlsView];

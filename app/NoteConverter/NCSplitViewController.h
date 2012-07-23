@@ -22,7 +22,7 @@
 @property (nonatomic, retain) NCInstrumentViewController* secondaryInstrumentController;
 @property (nonatomic, retain) NCNotesModel* model;
 
-@property (nonatomic, assign) NCToolbarViewController* toolbarController;
+@property (nonatomic, retain) NCToolbarViewController* toolbarController;
 
 - (NCControlsView*) controlsView;
 
