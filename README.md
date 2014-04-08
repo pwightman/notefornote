@@ -1,4 +1,4 @@
-notefornote
+Note for Note
 ===========
 
 Note for Note iOS app.
